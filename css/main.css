@@ -1,0 +1,311 @@
+/*
+*   Author: Alejandro Medina
+*   Mail: rodrigo.medinacetz@gmail.com
+*   Date: Sep 16, 2016
+*/
+
+@import url('./fonts/stylesheet.css');
+
+/*Style the menu*/
+.sidebar{
+    position: fixed;
+    z-index: 10;
+    width: 227px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+/*Style the main section*/
+
+section[name="main-section"]{
+    padding: 15px 10px 15px 227px;
+    height: 100%;
+    background-image: url('./../assets/images/Seccion1_05.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+.main-section{
+    height: 100%;
+    width: 100%;
+}
+
+.main-section img.logo{
+    float: right;
+}
+
+/*Style the description section*/
+
+section[name="description-section"]{
+    height: 100%;
+    background-image: url('./../assets/images/Imagen02.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-section{
+    height: 80%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .39);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.description-section div#description{
+    width: 40%;
+    text-align: center;
+}
+
+div.description-section div#description h2{
+    color: #F96900;
+    margin: 20px 0px;
+}
+
+div.description-section div#description p{
+    color: #F4F4F4;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+
+/*Style jungle tour*/
+
+section[name="jungle-tour"]{
+    height: 100%;
+}
+div.jungle-tour{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .39);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.jungle-tour div#info-jungle-tour, .jungle-tour div#image-jungle-tour{
+    /* width: 50%; */
+    height: 100%;
+}
+div#info-jungle-tour{
+    width: 50%;
+    background: url(./../assets/images/JungleTour_02.jpg) no-repeat 50%;
+    background-size: cover;
+    min-height: 100%;
+}
+div#info-jungle-tour div{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(101,165,9, .35)
+}
+div#image-jungle-tour{
+    width: 50%;
+    background: url(./../assets/images/JungleTour_01.jpg) no-repeat 50%;
+    background-size: cover;
+    min-height: 100%;
+}
+
+/*Style Scuba dive*/
+
+section[name="scuba-dive"]{
+    height: 100%;
+    background-image: url('./../assets/images/ScubaDive.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.scuba-dive{
+    height: 100%;
+    width: 100%;
+}
+div.scuba-dive div#info-scuba-dive{
+    height: 100%;
+    width: 50%;
+    float: right;
+    background-color: rgba(0,123,164, .50);
+}
+
+/*Style mangrove tour*/
+
+section[name="mangrove-tour"]{
+    height: 100%;
+}
+div.mangrove-tour{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .39);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.mangrove-tour div#info-mangrove-tour, .mangrove-tour div#image-mangrove-tour{
+    /* width: 50%; */
+    height: 100%;
+}
+div#info-mangrove-tour{
+    width: 50%;
+    background: url(./../assets/images/Mangroove_02.jpg) no-repeat 50%;
+    background-size: cover;
+    min-height: 100%;
+}
+
+div#image-mangrove-tour{
+    width: 50%;
+    background: url(./../assets/images/Mangroove_01.jpg) no-repeat 50%;
+    background-size: cover;
+    min-height: 100%;
+}
+
+/*Style coming soon*/
+
+section[name="coming-soon"]{
+    height: 100%;
+    background-image: url('./../assets/images/Fish.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.coming-soon{
+    height: 100%;
+    width: 100%;
+}
+div.coming-soon div#info-coming-soon{
+    height: 100%;
+    width: 50%;
+    float: right;
+    background-color: rgba(0,123,164, .50);
+}
+
+/*Style the contact section*/
+
+section[name="contact-section"]{
+    height: 100%;
+    padding: 15px 10px 15px 227px;
+    background-image: url('./../assets/images/Water.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+div.contact-section{
+    height: 80%;
+    width: 100%;
+    padding: 0px 20px;
+
+/* 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+div.contact-buttons{
+    height: auto;
+    width: 140px;
+    border-radius: 3px;
+    /* border: 1px solid #414042; */
+    box-shadow: 0px 1px 10px 2px rgba(88,89,91, 54);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 20px 0px;
+    padding: 0px;
+    background: #FFFFFF;
+}
+
+div.contact-buttons i{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-align: center;
+    background: #65A509;
+    color:#FFFFFF;
+    width: 30%;
+    font-size: 2em;
+    display: inline-block;
+}
+
+
+div.contact-buttons span{
+    text-align: center;
+    color: #58595B;
+    font-size: 1em;
+    width: 70%;
+    display: inline-block;
+}
+
+div.contact-buttons-group{
+    overflow: visible;
+    height: auto;
+    width: 140px;
+    margin: 0px;
+}
+
+div.contact-buttons-group p{
+    font-size: 1em;
+    color: #FFFFFF;
+    padding-left: 30%;
+    font-weight: bold;
+}
+
+div#contact-form{
+    margin: 20px 0px;
+}
+
+/*Style the footer*/
+
+footer{
+    height: 10%;
+    background: #022d38;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+footer p{
+    font-family: Roboto Cn;
+    font-style: normal;
+}   
