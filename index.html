@@ -2,15 +2,19 @@
 <html>
 
 <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-        <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Buceo y esnórquel, Tours privados, Tours, Actividades al aire libre, Tours en barco y deportes acuáticos.">
+    <meta name="keywords" content="Marina Punta del Este, Cancun, Buceo, Esnorquel, Tours, Actividades al aire libre, deportes">
+    <meta name=”robots” content="Index, Follow">
+    <meta name="Author" content="Alejandro Medina">
     <title>Marina Punta del Este</title>
 
     <link rel="icon" type="img/png" href="./assets/images/MPE_Logo_Mini.png">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" media="print" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/standars.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -31,7 +35,7 @@
     <section name="description-section">
         <div class="description-section">
             <div>
-                <img src="./assets/images/Logo_Grande.png" class="logo animated fadeIn img-responsive" alt="Marina Punta del Este">
+                <img src="./assets/images/Logo_Grande.png" class="img-responsive logo animated fadeIn" alt="Marina Punta del Este">
             </div>
             <div id="description" class="animated fadeInUp">
                 <h2>Where fun meets water!</h2>
@@ -45,7 +49,22 @@
     <section name="jungle-tour">
         <div class="jungle-tour">
             <div id="info-jungle-tour">
+                <div id="cuadroVerde">
+                    <div class="animated fadeInLeft">
+                        <h1>JUNGLE
+                            <u>TOUR</u>
+                        </h1>
+                        <p>Get to drive your own speedboat on Cancun’s signature snorkel tour. The adventure starts off by steering
+                            through the dense mangroves onto Punta Nizuc’s Coral Reef, where you will be able to snorkel
+                            and discover the astonishing sea life!</p>
 
+                        <div class="divButton">
+                            <button>
+                                MORE INFO
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="image-jungle-tour">
 
@@ -56,7 +75,18 @@
     <section name="scuba-dive">
         <div class="scuba-dive">
             <div id="info-scuba-dive">
+                <div class="animated fadeInRight">
+                    <h1>SCUBA
+                        <u>DIVE</u>
+                    </h1>
+                    <p>Discover the underwater world at the second largest coral reef in the world! Whether you have never dived
+                        before or you are an experienced diver, we have options that will meet your needs and our PADI certified
+                        instructors will ensure you have a memorable dive.</p>
 
+                    <div id="divButton">
+                        <button>MORE INFO</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -64,7 +94,21 @@
     <section name="mangrove-tour">
         <div class="mangrove-tour">
             <div id="info-mangrove-tour">
+                <div id="cuadroVerde">
+                    <div class="animated fadeInLeft">
+                        <h1>MANGROVE
+                            <u>TOUR</u>
+                        </h1>
+                        <p>Enjoy the thrill of driving your own speedboat while enjoying the sight of mangroves and local wildlife.
+                            Stopping for a refreshing swim at “Playa Conchitas”.</p>
 
+                        <div class="divButton">
+                            <button>
+                                MORE INFO
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="image-mangrove-tour">
 
@@ -75,20 +119,25 @@
     <section name="coming-soon">
         <div class="coming-soon">
             <div id="info-coming-soon">
-
+                <div class="animated fadeIn">
+                    <h1>COMING
+                        <u>SOON</u>
+                    </h1>
+                    <p>Boat Rental & Aquabus</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section name="contact-section">
         <div class="contact-section">
-            <div>
+            <div id="encabezadoContacto">
                 <h1>CONTACT
                     <u>US</u>
                 </h1>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="contact-buttons-group">
                         <div class="contact-buttons">
                             <i class="fa fa-phone-square"></i>
@@ -116,17 +165,32 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div id="contact-form">
-                        <form action="" method="POST">
-                            <input type="text" class="form-control" name="name" placeholder="Name">
-                            <input type="email" class="form-control" name="Email" placeholder="Email">
-                            <textarea name="message" id="message" rows="5" class="form-control" placeholder="Message">
 
-                            </textarea>
-                        </form>
+                <div class="col-xs-12 col-sm-6 col-md-6" id="contacto-forma">
+                    <div class="contact-title">
+                        <p>LEAVE A MESSAGE HERE</p>
                     </div>
-                </div> -->
+
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea name="message" id="message" rows="3" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                    </form>
+
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29773.69274489892!2d-86.77253806333547!3d21.12406138594679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2891b866a12b%3A0xc6a1412250fc2a70!2sMarina+Punta+del+Este!5e0!3m2!1ses!2smx!4v1505969369647"
+                            width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

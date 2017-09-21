@@ -92,6 +92,7 @@ div.description-section div#description p{
 section[name="jungle-tour"]{
     height: 100%;
 }
+
 div.jungle-tour{
     width: 100%;
     height: 100%;
@@ -100,6 +101,12 @@ div.jungle-tour{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+
+}
+
+div#info-jungle-tour div h1{
+    margin: 0px;
 }
 
 div.jungle-tour div#info-jungle-tour, .jungle-tour div#image-jungle-tour{
@@ -112,8 +119,9 @@ div#info-jungle-tour{
     background-size: cover;
     min-height: 100%;
 }
-div#info-jungle-tour div{
-    padding: 0px;
+div#info-jungle-tour div#cuadroVerde{
+    padding-left: 227px;
+    padding-top: 50px;
     margin: 0px;
     height: 100%;
     width: 100%;
@@ -126,6 +134,42 @@ div#image-jungle-tour{
     min-height: 100%;
 }
 
+div#info-jungle-tour div h1{
+    margin: 10px 20px;
+    color: #F4F4F4;
+}
+
+div#info-jungle-tour div h1 u{
+    display: block;
+    color: #F96900;
+}
+
+div#info-jungle-tour div p{
+    color: #F4F4F4;
+    margin: 10px 20px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+div#info-jungle-tour div div#divButton{
+    width: 100%;
+    height:50%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+div#info-jungle-tour div div button{
+    text-align: center;
+    background-color: transparent;
+    width: 150px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 3px;
+}
 /*Style Scuba dive*/
 
 section[name="scuba-dive"]{
@@ -147,11 +191,54 @@ div.scuba-dive{
     width: 100%;
 }
 div.scuba-dive div#info-scuba-dive{
+    padding-top: 50px;
     height: 100%;
     width: 50%;
     float: right;
     background-color: rgba(0,123,164, .50);
 }
+
+div#info-scuba-dive h1{
+    margin: 10px 20px;
+    color: #F4F4F4;
+}
+
+div#info-scuba-dive u{
+    display: block;
+    color: #65A509;
+}
+
+div#info-scuba-dive p{
+    width: 60%;
+    color: #F4F4F4;
+    margin: 10px 20px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+
+div#info-scuba-dive div#divButton{
+    width: 60%;
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+div#info-scuba-dive div#divButton button{
+    text-align: center;
+    background-color: transparent;
+    width: 150px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 3px;
+}
+
 
 /*Style mangrove tour*/
 
@@ -169,7 +256,6 @@ div.mangrove-tour{
 }
 
 div.mangrove-tour div#info-mangrove-tour, .mangrove-tour div#image-mangrove-tour{
-    /* width: 50%; */
     height: 100%;
 }
 div#info-mangrove-tour{
@@ -184,6 +270,31 @@ div#image-mangrove-tour{
     background: url(./../assets/images/Mangroove_01.jpg) no-repeat 50%;
     background-size: cover;
     min-height: 100%;
+}
+div#info-mangrove-tour div#cuadroVerde{
+    padding-left: 227px;
+    padding-top: 50px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(101,165,9, .35);
+}
+
+div#info-mangrove-tour div h1{
+    margin: 10px 20px;
+    color: #F4F4F4;
+}
+
+div#info-mangrove-tour div h1 u{
+    display: block;
+    color: #ED2A50;
+}
+
+div#info-mangrove-tour div p{
+    color: #F4F4F4;
+    margin: 10px 20px;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 /*Style coming soon*/
@@ -207,10 +318,29 @@ div.coming-soon{
     width: 100%;
 }
 div.coming-soon div#info-coming-soon{
+    padding-top: 50px;
     height: 100%;
     width: 50%;
     float: right;
     background-color: rgba(0,123,164, .50);
+}
+
+div#info-coming-soon h1{
+    margin: 10px 20px;
+    color: #F4F4F4;
+}
+
+div#info-coming-soon u{
+    display: block;
+    color: #00A9CF;
+}
+
+div#info-coming-soon p{
+    width: 60%;
+    color: #F4F4F4;
+    margin: 10px 20px;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 /*Style the contact section*/
@@ -232,19 +362,12 @@ div.contact-section{
     height: 80%;
     width: 100%;
     padding: 0px 20px;
-
-/* 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 div.contact-buttons{
     height: auto;
     width: 140px;
     border-radius: 3px;
-    /* border: 1px solid #414042; */
     box-shadow: 0px 1px 10px 2px rgba(88,89,91, 54);
     display: flex;
     flex-direction: row;
@@ -290,8 +413,63 @@ div.contact-buttons-group p{
     font-weight: bold;
 }
 
-div#contact-form{
-    margin: 20px 0px;
+div.contact-section{
+    padding-top: 50px;
+}
+
+div.contact-section div#encabezadoContacto h1{
+    margin: 10px 20px;
+    color: #F4F4F4;
+}
+
+div.contact-section div#encabezadoContacto u{
+    display: block;
+    color: #65A509;
+}
+
+div.contact-title{
+    border: 1px solid #FFFFFF;
+    width: 200px;
+    padding: 5px;
+    margin: 8px 0px;
+}
+
+div.contact-title p {
+    margin: 0px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+div.contact-section div#contacto-forma form input{
+    background-color: rgba(255, 255, 255, .80);
+	color: #414042 !important;
+	border-radius: 5px;
+	margin-bottom: 10px;
+    min-height: 30px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,.49), 0px 1px 1px 0px rgba(0,0,0,.20) ;
+}
+
+div.contact-section div#contacto-forma form textarea{
+    background-color: rgba(255, 255, 255, .80);
+	color: #414042 !important;
+	border-radius: 5px;
+	margin-bottom: 10px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,.49), 0px 1px 1px 0px rgba(0,0,0,.20) ;
+}
+
+::-webkit-input-placeholder{
+	color: #00A9CF !important;
+}
+
+:moz-placeholder{
+	color: #00A9CF!important;
+}
+
+::moz-placeholder{
+	color: #00A9CF !important;
+}
+
+:-ms-input-placeholder{
+	color: #00A9CF!important;
 }
 
 /*Style the footer*/
@@ -308,4 +486,27 @@ footer{
 footer p{
     font-family: Roboto Cn;
     font-style: normal;
-}   
+}
+
+/*GENERAL*/
+
+div.divButton{
+    width: 100%;
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+div.divButton button{
+    text-align: center;
+    background-color: transparent;
+    width: 150px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 3px;
+}
