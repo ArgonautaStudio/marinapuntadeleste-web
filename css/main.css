@@ -47,6 +47,29 @@ div#sidebar-div-menu a:hover{
 }
 
 
+div#sidebar-div-social{
+    float: right;
+    width: 70%;
+    padding: 20px 0px 10px 0px;
+    text-align: right;
+}
+
+div#sidebar-div-social a img:hover{
+    text-decoration: none;
+    transform: scale(1.2,1.2);
+}
+
+div#sidebar-div-recomended{
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+
+div#sidebar-div-recomended a img:hover{
+    text-decoration: none;
+    transform: scale(1.1,1.1);
+}
+
 /*Style the main section*/
 
 section[name="main-section"]{
