@@ -5,6 +5,7 @@
 */
 
 @import url('./fonts/stylesheet.css');
+@import url('./fonts/messyAmanda/stylesheet.css');
 
 /*Style the menu*/
 .sidebar{
@@ -24,30 +25,32 @@
 /*Style the main section*/
 
 section[name="main-section"]{
-    padding: 15px 10px 15px 227px;
-    height: 100%;
-    background-image: url('./../assets/images/Seccion1_05.jpg');
+    min-height: 100%;
+    /* background-image: url('./../assets/images/Seccion1_05.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-position: top; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
-    background-size: cover;
+    background-size: cover; */
 }
 .main-section{
     height: 100%;
     width: 100%;
+    position: absolute;
 }
 
 .main-section img.logo{
-    float: right;
+    position: relative;
+    top: 0px;
+    margin: 10px 10px;
 }
 
 /*Style the description section*/
 
 section[name="description-section"]{
-    height: 100%;
+    min-height: 100%;
     background-image: url('./../assets/images/Imagen02.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat; 
@@ -75,9 +78,12 @@ div.description-section div#description{
     text-align: center;
 }
 
-div.description-section div#description h2{
+div.description-section div#description h1{
     color: #F96900;
     margin: 20px 0px;
+    font-family: 'DJB Messy Amanda Goes';
+    font-weight: bold;
+    font-style: normal;
 }
 
 div.description-section div#description p{
@@ -125,7 +131,7 @@ div#info-jungle-tour div#cuadroVerde{
     margin: 0px;
     height: 100%;
     width: 100%;
-    background-color: rgba(101,165,9, .35)
+    background-color: rgba(101,165,9, .70)
 }
 div#image-jungle-tour{
     width: 50%;
@@ -219,7 +225,7 @@ div#info-scuba-dive p{
 
 div#info-scuba-dive div#divButton{
     width: 60%;
-    height: 50%;
+    height: 30%;
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -277,7 +283,7 @@ div#info-mangrove-tour div#cuadroVerde{
     margin: 0px;
     height: 100%;
     width: 100%;
-    background-color: rgba(101,165,9, .35);
+    background-color: rgba(3,130,61, .70);
 }
 
 div#info-mangrove-tour div h1{
@@ -346,7 +352,7 @@ div#info-coming-soon p{
 /*Style the contact section*/
 
 section[name="contact-section"]{
-    height: 100%;
+    min-height: 100%;
     padding: 15px 10px 15px 227px;
     background-image: url('./../assets/images/Water.jpg');
     background-attachment: fixed;
@@ -432,6 +438,7 @@ div.contact-title{
     width: 200px;
     padding: 5px;
     margin: 8px 0px;
+    text-align: center;
 }
 
 div.contact-title p {
@@ -446,9 +453,11 @@ div.contact-section div#contacto-forma form input{
 	margin-bottom: 10px;
     min-height: 30px;
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,.49), 0px 1px 1px 0px rgba(0,0,0,.20) ;
+    font-weight: bold;
 }
 
 div.contact-section div#contacto-forma form textarea{
+    font-weight: bold;
     background-color: rgba(255, 255, 255, .80);
 	color: #414042 !important;
 	border-radius: 5px;
@@ -457,24 +466,99 @@ div.contact-section div#contacto-forma form textarea{
 }
 
 ::-webkit-input-placeholder{
-	color: #00A9CF !important;
+    color: #007BA4 !important;
+    font-weight: bold;
 }
 
 :moz-placeholder{
-	color: #00A9CF!important;
+    color: #007BA4!important;
+    font-weight: bold;
 }
 
 ::moz-placeholder{
-	color: #00A9CF !important;
+    color: #007BA4 !important;
+    font-weight: bold;
 }
 
 :-ms-input-placeholder{
-	color: #00A9CF!important;
+    color: #007BA4!important;
+    font-weight: bold;
+}
+div#contacto-forma button[type="submit"]{
+    width: 80px;
+    height: 174px;
+    border-radius: 3px;
+    margin: 0px 5px;
+    background-color: rgba(101,165,9, .59);
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #65A509;
+}
+
+div#contacto-forma div .row{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.columna{
+    height: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+div.row{
+    height: 100%;
+}
+
+div.submit-success{
+    display: none;
+    padding: 0px;
+    border: 2px solid #03823D;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center; */
+    margin: 5px 0px;
+}
+
+div.submit-success p {
+    color: #03823D;
+    font-weight: bold;
+    margin: 0px;
+    padding: 3px 0px;
+}
+
+div.submit-error{
+    display: none;
+    padding: 0px;
+    border: 2px solid #ED2A50;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center; */
+    margin: 5px 0px;
+}
+
+div.submit-error p {
+    color: #ED2A50;
+    font-weight: bold;
+    margin: 0px;
+    padding: 3px 0px;
 }
 
 /*Style the footer*/
 
 footer{
+    width: 100%;
     height: 10%;
     background: #022d38;
     color: #FFFFFF;
@@ -489,8 +573,10 @@ footer p{
 }
 
 /*GENERAL*/
-
-div.divButton{
+div.contenedorAuxiliar{
+    height: 100%;
+}
+div.contenedorAuxiliar div.divButton{
     width: 100%;
     height: 50%;
     margin: 0px;
@@ -509,4 +595,76 @@ div.divButton button{
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     padding: 3px;
+}
+
+p.normal-p{
+    font-size: 1em;
+}
+
+div.button-book-now-orange{
+    z-index: 100;
+    position: relative;
+    bottom: 0px;
+    background: rgba(249,105,0, .70);
+    width: 200px;
+    height: 50px;
+    color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,.20), 0px 1px 2px 0px rgba(0,0,0,.10);    
+    margin-top: 85%;
+    cursor: pointer;
+}
+
+
+div.button-book-now-orange p{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+div.button-book-now-green{
+    z-index: 100;
+    position: relative;
+    bottom: 0px;
+    background: rgba(101,165,9, .70);
+    width: 200px;
+    height: 50px;
+    color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,.20), 0px 1px 2px 0px rgba(0,0,0,.10);   
+    margin-top: 10%;
+    cursor: pointer;
+}
+div.button-book-now-green p{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.button-book-now-pink{
+    z-index: 100;
+    position: relative;
+    bottom: 0px;
+    background: rgba(237,42,80, .70);
+    width: 200px;
+    height: 50px;
+    color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,.20), 0px 1px 2px 0px rgba(0,0,0,.10);    
+    margin-top: 85%;
+    cursor: pointer;
+}
+
+
+div.button-book-now-pink p{
+    margin: 0px;
+    padding: 0px;
 }
