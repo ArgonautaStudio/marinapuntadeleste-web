@@ -23,10 +23,17 @@
     <div class="sidebar animated fadeInLeft hidden-xs">
         <div class="sidebar-menu-header">
             <img src="./assets/images/Logo_Menu.png" alt="Marina Punta del Este">
+            <div id="sidebar-div-menu">
+                <a data-scroll='' href="#home">HOME</a>
+                <a data-scroll='' href="#tours-activities">TOURS & ACTIVITIES</a>
+                <a>BOOKING</a>
+                <a>DISCOUNTS</a>
+                <a data-scroll='' href="#contact">CONTACT</a>
+            </div>
         </div>
     </div>
 
-    <section name="main-section">
+    <section name="main-section" id="home">
         <div class="main-section">
 
             <div id="slider" class="carousel slide" data-ride="carousel">
@@ -81,7 +88,7 @@
         </div>
     </section>
 
-    <section name="jungle-tour">
+    <section name="jungle-tour" id="tours-activities">
         <div class="jungle-tour">
             <div id="info-jungle-tour">
                 <div id="cuadroVerde">
@@ -173,7 +180,7 @@
         </div>
     </section>
 
-    <section name="contact-section">
+    <section name="contact-section" id="contact">
         <div class="contact-section">
             <div id="encabezadoContacto">
                 <h1>CONTACT
@@ -259,13 +266,9 @@
 
     <script src="js/jquery/jquery-3.2.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
 </body>
 
 </html>
-
-<!-- 
-poner los botones de book now, 
-hacer el navbar, los botones de more info vas mas separados
- -->

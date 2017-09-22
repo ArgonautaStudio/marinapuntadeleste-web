@@ -59,3 +59,12 @@ $(document).ready(function () {
     });
 
 });
+
+
+smoothScroll.init({
+    selector: '[data-scroll]',
+    selectorHeader: null,
+    speed: 800,
+    easing: 'easeInOutCubic',
+    offset: 0
+});

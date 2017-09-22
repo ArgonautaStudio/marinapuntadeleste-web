@@ -22,18 +22,35 @@
     
 }
 
+div#sidebar-div-menu{
+    text-align: right;
+    border-top: 2px solid #F4F4F4;
+    border-bottom: 2PX solid #F4F4F4;
+    width: 70%;
+    float: right;
+    padding: 20px 0px;
+}
+
+div#sidebar-div-menu a{
+    font-size: 1.5em;
+    display: block;
+    color: #F4F4F4;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .35);
+}
+
+div#sidebar-div-menu a:hover{
+    font-size: 1.6em;
+}
+
+
 /*Style the main section*/
 
 section[name="main-section"]{
     min-height: 100%;
-    /* background-image: url('./../assets/images/Seccion1_05.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover; */
 }
 .main-section{
     height: 100%;
