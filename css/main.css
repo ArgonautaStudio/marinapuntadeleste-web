@@ -87,6 +87,10 @@ section[name="main-section"]{
     margin: 10px 10px;
 }
 
+.carousel, .carousel-inner, .carousel-inner > .item, .carousel-inner > .item > img {
+    height: 100% !important;
+  }
+
 /*Style the description section*/
 
 section[name="description-section"]{
