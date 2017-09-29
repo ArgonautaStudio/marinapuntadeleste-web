@@ -81,10 +81,11 @@ section[name="main-section"]{
     position: absolute;
 }
 
-.main-section img.logo{
+img.logoMain{
     position: relative;
     top: 0px;
     margin: 10px 10px;
+    width: 25%;
 }
 
 .carousel, .carousel-inner, .carousel-inner > .item, .carousel-inner > .item > img {
@@ -240,6 +241,13 @@ div.scuba-dive{
     height: 100%;
     width: 100%;
 }
+
+div.scuba-dive div#container-button-scuba-dive{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 div.scuba-dive div#info-scuba-dive{
     padding-top: 50px;
     height: 100%;
@@ -672,7 +680,6 @@ div.button-book-now-orange p{
 div.button-book-now-green{
     z-index: 100;
     position: relative;
-    bottom: 0px;
     background: rgba(101,165,9, .70);
     width: 200px;
     height: 50px;
@@ -681,9 +688,9 @@ div.button-book-now-green{
     justify-content: center;
     align-content: center;
     align-items: center;
-    box-shadow: 0px 1px 2px 0px rgba(0,0,0,.20), 0px 1px 2px 0px rgba(0,0,0,.10);   
-    margin-top: 10%;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,.20), 0px 1px 2px 0px rgba(0,0,0,.10);
     cursor: pointer;
+    margin-top: 42%;
 }
 div.button-book-now-green p{
     margin: 0px;
@@ -711,4 +718,21 @@ div.button-book-now-pink{
 div.button-book-now-pink p{
     margin: 0px;
     padding: 0px;
+}
+
+.button-book-now p{
+    transition: all 0.4s;
+}
+.button-book-now:hover p {
+    padding-right: 20px;
+} 
+.button-book-now:hover p:after {
+    opacity: 1;
+    right: 0;
+}
+.button-book-now p:after {
+    content: '\00bb';
+    opacity: 0;
+    right: -10px;
+    transition: 0.4s;
 }
