@@ -1,5 +1,29 @@
 $(document).ready(function () {
 
+    function responsiveImages() {
+        var DeviceWidth = window.innerWidth;
+        if (DeviceWidth <= 414) {
+            $('#carousel1').attr('src', 'assets/images/Movil_Img_Seccion1_01.jpg');
+            $('#carousel2').attr('src', 'assets/images/Movil_Img_Seccion1_02.jpg');
+            $('#carousel3').attr('src', 'assets/images/Movil_Img_Seccion1_03.jpg');
+            $('#carousel4').attr('src', 'assets/images/Movil_Img_Seccion1_04.jpg');
+            $('#carousel5').attr('src', 'assets/images/Movil_Img_Seccion1_05.jpg');
+        } else {
+            $('#carousel1').attr('src', 'assets/images/Seccion1_06.jpg');
+            $('#carousel2').attr('src', 'assets/images/Seccion1_01.jpg');
+            $('#carousel3').attr('src', 'assets/images/Seccion1_04.jpg');
+            $('#carousel4').attr('src', 'assets/images/Seccion1_02.jpg');
+            $('#carousel5').attr('src', 'assets/images/Seccion1_03.jpg');
+        }
+    };
+
+
+    $(window).resize(function () {
+        responsiveImages();
+    });
+
+    responsiveImages();
+
     $('.carousel').carousel({
         interval: 3000
     })
@@ -58,6 +82,10 @@ $(document).ready(function () {
         }, 'json');
     });
 
+    var navMain = $(".navbar-collapse");
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+        navMain.collapse('hide');
+    });
 });
 
 
