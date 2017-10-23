@@ -71,6 +71,14 @@ div.mainSection {
     top: 5%;
     right: 5%;
     z-index: 10; }
+  div.mainSection div.slider {
+    min-height: 100%; }
+    div.mainSection div.slider div.carousel-inner {
+      min-height: 100%; }
+      div.mainSection div.slider div.carousel-inner div.item {
+        min-height: 100%; }
+        div.mainSection div.slider div.carousel-inner div.item img {
+          min-height: 100%; }
 
 /*Description section*/
 section#descriptionSection {
@@ -387,7 +395,7 @@ section#contactSection {
 
 /*Footer*/
 footer {
-  min-height: 40px;
+  min-height: 50px;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -480,5 +488,28 @@ button.pinkButton {
   border: none;
   opacity: .7;
   color: #F4F4F4; }
+
+nav.navbar {
+  position: fixed;
+  z-index: 10;
+  background: transparent;
+  right: 10px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: none; }
+  nav.navbar div.container-fluid div.navbar-header button {
+    border: 1px solid #F4F4F4; }
+    nav.navbar div.container-fluid div.navbar-header button span.icon-bar {
+      color: #F4F4F4 !important; }
+  nav.navbar div.container-fluid div.collapse {
+    background-color: rgba(0, 169, 207, 0.54) !important;
+    text-align: center !important; }
+    nav.navbar div.container-fluid div.collapse ul li {
+      text-align: center !important; }
+      nav.navbar div.container-fluid div.collapse ul li a {
+        color: #FFFFFF;
+        font-size: 1.5em;
+        font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

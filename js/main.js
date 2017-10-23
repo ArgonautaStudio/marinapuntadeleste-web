@@ -62,22 +62,24 @@ $(document).ready(function () {
             }
         }
     }).on('success.form.bv', function (e) {
+        console.log('send');
         e.preventDefault();
         var $form = $(e.target);
         var bv = $form.data('bootstrapValidator');
         $.post($form.attr('action'), $form.serialize(), function (result) {
-            document.getElementById("contactForm").reset();
-            if (!result.error) {
-                $('.submit-success').fadeIn();
-                setTimeout(function () {
-                    $('.submit-success').fadeOut();
-                }, 2000)
-            } else {
-                $('.submit-error').fadeIn();
-                setTimeout(function () {
-                    $('.submit-error').fadeOut();
-                }, 2000)
-            }
+            console.log(result);
+            // document.getElementById("contactForm").reset();
+            // if (!result.error) {
+            //     $('.success-send').fadeIn();
+            //     setTimeout(function () {
+            //         $('.success-send').fadeOut();
+            //     }, 2000)
+            // } else {
+            //     $('.error-send').fadeIn();
+            //     setTimeout(function () {
+            //         $('.error-send').fadeOut();
+            //     }, 2000)
+            // }
 
         }, 'json');
     });

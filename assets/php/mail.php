@@ -13,7 +13,8 @@ function checkParams()
 
 function sendMail($data)
 {
-    $para      = 'info@marinapuntadeleste.mx';
+    // $para      = 'info@marinapuntadeleste.mx';
+    $para      = 'rodrigo.medinacetz@gmail.com';
     $titulo    = 'Mensaje: Marina Punta de Este MX';
     $mensaje   = "Ha recibido un nuevo mensaje desde https://marinapuntadeleste.mx/ por parte de: " . $data->name . "\r\n" .
     "El mensaje: " . "\r\n" . $data->message;
@@ -37,5 +38,6 @@ if (checkParams()) {
     $data->message = $_POST['message'];
     sendMail($data);
 } else {
+    echo 'no params';
     exit();
 }
