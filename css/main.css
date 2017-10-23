@@ -3,13 +3,14 @@
 div.container-fluid {
   height: 100%; }
   div.container-fluid section.fullHeightSection {
-    min-height: 100%; }
+    min-height: 100%;
+    position: relative; }
 
 .sectionTitle {
   margin: 0px; }
 
 .sidebar {
-  width: 20vw;
+  width: 17vw;
   z-index: 10;
   height: 100%;
   position: fixed;
@@ -21,6 +22,8 @@ div.container-fluid {
   background-color: rgba(0, 0, 0, 0.35); }
   .sidebar div.sidebarHeader {
     text-align: right; }
+    .sidebar div.sidebarHeader img {
+      width: 100%; }
   .sidebar div#sidebar-div-menu {
     text-align: right;
     border-top: 2px solid #F4F4F4;
@@ -136,9 +139,18 @@ section#jungleTourSection {
           background-color: rgba(101, 165, 9, 0.7); }
           section#jungleTourSection div.jungleTour div#jungleTourRow div#colInfo div#fondoVerde div#jungleTourInformation {
             height: 100%;
-            padding-left: 21vw;
+            padding-left: 18vw;
             padding-right: 1vw;
-            padding-top: 10%; }
+            padding-top: 5%; }
+            section#jungleTourSection div.jungleTour div#jungleTourRow div#colInfo div#fondoVerde div#jungleTourInformation h1 {
+              color: #F4F4F4; }
+              section#jungleTourSection div.jungleTour div#jungleTourRow div#colInfo div#fondoVerde div#jungleTourInformation h1 u {
+                display: block;
+                color: #f96900; }
+            section#jungleTourSection div.jungleTour div#jungleTourRow div#colInfo div#fondoVerde div#jungleTourInformation p {
+              color: #F4F4F4;
+              font-weight: bold;
+              text-align: justify; }
       section#jungleTourSection div.jungleTour div#jungleTourRow div#colImage {
         padding: 0px;
         height: 100%;
@@ -149,5 +161,324 @@ section#jungleTourSection {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover; }
+
+/*Scuba DIve*/
+section#scubaDiveSection {
+  height: 100%; }
+  section#scubaDiveSection div.scubaDive {
+    height: 100%;
+    background-image: url("./../assets/images/ScubaDive.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    section#scubaDiveSection div.scubaDive div#scubaDiveRow {
+      height: 100%; }
+      section#scubaDiveSection div.scubaDive div#scubaDiveRow div#colInfo {
+        padding: 0px;
+        height: 100%; }
+        section#scubaDiveSection div.scubaDive div#scubaDiveRow div#colInfo div#fondoAzul {
+          height: 100%;
+          background-color: rgba(0, 169, 207, 0.54); }
+          section#scubaDiveSection div.scubaDive div#scubaDiveRow div#colInfo div#fondoAzul div#scubaDiveInformation {
+            height: 100%;
+            padding: 10%; }
+            section#scubaDiveSection div.scubaDive div#scubaDiveRow div#colInfo div#fondoAzul div#scubaDiveInformation h1 {
+              color: #F4F4F4; }
+              section#scubaDiveSection div.scubaDive div#scubaDiveRow div#colInfo div#fondoAzul div#scubaDiveInformation h1 u {
+                display: block;
+                color: #65A509; }
+            section#scubaDiveSection div.scubaDive div#scubaDiveRow div#colInfo div#fondoAzul div#scubaDiveInformation p {
+              color: #F4F4F4;
+              font-weight: bold;
+              text-align: justify; }
+
+/*Mangrove Tour*/
+section#mangroveTourSection {
+  height: 100%; }
+  section#mangroveTourSection div.mangroveTour {
+    height: 100%; }
+    section#mangroveTourSection div.mangroveTour div#mangroveTourRow {
+      height: 100%; }
+      section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo {
+        padding: 0px;
+        height: 100%;
+        background-image: url("./../assets/images/Mangroove_02.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+        section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo div#fondoVerde {
+          height: 100%;
+          background-color: rgba(101, 165, 9, 0.7); }
+          section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo div#fondoVerde div#mangroveTourInformation {
+            height: 100%;
+            padding-left: 18vw;
+            padding-right: 1vw;
+            padding-top: 10%; }
+            section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo div#fondoVerde div#mangroveTourInformation h1 {
+              color: #F4F4F4; }
+              section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo div#fondoVerde div#mangroveTourInformation h1 u {
+                color: #ED2A50;
+                display: block; }
+            section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo div#fondoVerde div#mangroveTourInformation p {
+              color: #F4F4F4;
+              font-weight: bold;
+              text-align: justify; }
+      section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colImage {
+        padding: 0px;
+        height: 100%;
+        background-image: url("./../assets/images/Mangroove_01.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+
+/*Coming Soon Section*/
+section#comingSoonSection {
+  height: 100%; }
+  section#comingSoonSection div.comingSoon {
+    height: 100%;
+    background-image: url("./../assets/images/Fish.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    section#comingSoonSection div.comingSoon div#comingSoonRow {
+      height: 100%; }
+      section#comingSoonSection div.comingSoon div#comingSoonRow div#colInfo {
+        padding: 0px;
+        height: 100%; }
+        section#comingSoonSection div.comingSoon div#comingSoonRow div#colInfo div#fondoAzul {
+          height: 100%;
+          background-color: rgba(0, 169, 207, 0.54); }
+          section#comingSoonSection div.comingSoon div#comingSoonRow div#colInfo div#fondoAzul div#comingSoonInformation {
+            height: 100%;
+            padding: 10%; }
+            section#comingSoonSection div.comingSoon div#comingSoonRow div#colInfo div#fondoAzul div#comingSoonInformation h1 {
+              color: #F4F4F4; }
+              section#comingSoonSection div.comingSoon div#comingSoonRow div#colInfo div#fondoAzul div#comingSoonInformation h1 u {
+                display: block;
+                color: #00A9CF; }
+            section#comingSoonSection div.comingSoon div#comingSoonRow div#colInfo div#fondoAzul div#comingSoonInformation p {
+              color: #F4F4F4;
+              font-weight: bold;
+              text-align: justify; }
+
+/*Contact Section*/
+section#contactSection {
+  height: 100%;
+  background-image: url("./../assets/images/Water.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  section#contactSection div.contact {
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 18vw; }
+    section#contactSection div.contact div#contactRow {
+      padding: 0px;
+      margin: 0px; }
+      section#contactSection div.contact div#contactRow div#infoContact h1.sectionTitle {
+        color: #F4F4F4; }
+        section#contactSection div.contact div#contactRow div#infoContact h1.sectionTitle u {
+          color: #65A509;
+          display: block; }
+      section#contactSection div.contact div#contactRow div#infoContact div.contact-buttons {
+        height: auto;
+        width: 140px;
+        border-radius: 3px;
+        box-shadow: 0px 1px 10px 2px #58595b;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 20px 0px;
+        padding: 0px;
+        background: #FFFFFF; }
+      section#contactSection div.contact div#contactRow div#infoContact div.contact-buttons i {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        text-align: center;
+        background: #65A509;
+        color: #FFFFFF;
+        width: 30%;
+        font-size: 2em;
+        display: inline-block; }
+      section#contactSection div.contact div#contactRow div#infoContact div.contact-buttons span {
+        text-align: center;
+        color: #58595B;
+        font-size: 1em;
+        width: 70%;
+        display: inline-block; }
+      section#contactSection div.contact div#contactRow div#infoContact div.contact-buttons-group {
+        overflow: visible;
+        height: auto;
+        width: 70%;
+        margin: 0px; }
+      section#contactSection div.contact div#contactRow div#infoContact div.contact-buttons-group p {
+        font-size: 1.5em;
+        color: #FFFFFF;
+        font-weight: bold; }
+      section#contactSection div.contact div#contactRow div#formContact div.mailsend-info {
+        display: none; }
+      section#contactSection div.contact div#contactRow div#formContact button {
+        background-color: transparent;
+        color: #F4F4F4;
+        font-weight: bold;
+        padding: 10px 25px;
+        border: 2px solid #F4F4F4;
+        margin-bottom: 10%; }
+      section#contactSection div.contact div#contactRow div#formContact form input {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #414042 !important;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        min-height: 30px;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.49), 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+        font-weight: bold; }
+      section#contactSection div.contact div#contactRow div#formContact form textarea {
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #414042 !important;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.49), 0px 1px 1px 0px rgba(0, 0, 0, 0.2); }
+      section#contactSection div.contact div#contactRow div#formContact form ::-webkit-input-placeholder {
+        color: #007BA4 !important;
+        font-weight: bold; }
+      section#contactSection div.contact div#contactRow div#formContact form :moz-placeholder {
+        color: #007BA4 !important;
+        font-weight: bold; }
+      section#contactSection div.contact div#contactRow div#formContact form ::moz-placeholder {
+        color: #007BA4 !important;
+        font-weight: bold; }
+      section#contactSection div.contact div#contactRow div#formContact form :-ms-input-placeholder {
+        color: #007BA4 !important;
+        font-weight: bold; }
+      section#contactSection div.contact div#contactRow div#formContact form button[type="submit"] {
+        width: 80px;
+        height: 174px;
+        border-radius: 3px;
+        margin: 0px 5px;
+        background-color: rgba(101, 165, 9, 0.59);
+        color: #FFFFFF;
+        font-weight: bold;
+        border: 1px solid;
+        border-color: #65A509; }
+      section#contactSection div.contact div#contactRow div#formContact form div.columna {
+        height: 100%;
+        margin: 0px !important;
+        padding: 0px !important; }
+      section#contactSection div.contact div#contactRow div#formContact div#map {
+        width: 100%; }
+
+/*Footer*/
+footer {
+  min-height: 40px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #022c38; }
+  footer p {
+    color: #F4F4F4;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px; }
+
+/*Bootstrap*/
+.carousel {
+  height: 100% !important; }
+
+.carousel-inner {
+  height: 100% !important; }
+
+.carousel-inner > .item {
+  height: 100% !important; }
+
+.carousel-inner > .item > img {
+  height: 100% !important; }
+
+button.moreInfoButton {
+  position: absolute;
+  bottom: 20%;
+  background-color: transparent;
+  color: #F4F4F4;
+  border: 2px solid #F4F4F4;
+  padding: 5px 25px;
+  font-weight: bold;
+  border-radius: 3px; }
+
+button.bookNowButton {
+  position: absolute;
+  z-index: 20;
+  bottom: 10%;
+  right: 0px;
+  padding: 10px 35px;
+  font-size: 2em;
+  font-weight: bold; }
+
+div.success-send {
+  border: 2px solid #65A509;
+  border-radius: 5px;
+  background-color: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10px 0px; }
+  div.success-send p {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    color: #65A509; }
+
+div.error-send {
+  border: 2px solid #e74c3c;
+  border-radius: 5px;
+  background-color: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10px 0px; }
+  div.error-send p {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    color: #e74c3c; }
+
+button.orangeButton {
+  background-color: #f96900;
+  border: none;
+  opacity: .7;
+  color: #F4F4F4; }
+
+button.greenButton {
+  background-color: #65A509;
+  border: none;
+  opacity: .7;
+  color: #F4F4F4; }
+
+button.pinkButton {
+  background-color: #ED2A50;
+  border: none;
+  opacity: .7;
+  color: #F4F4F4; }
 
 /*# sourceMappingURL=main.css.map */

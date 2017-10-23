@@ -15,7 +15,7 @@ function sendMail($data)
 {
     $para      = 'info@marinapuntadeleste.mx';
     $titulo    = 'Mensaje: Marina Punta de Este MX';
-    $mensaje   = "Ha recibido un nuevo mensaje desde http://marinapuntadeleste.mx/ por parte de: " . $data->name . "\r\n" .
+    $mensaje   = "Ha recibido un nuevo mensaje desde https://marinapuntadeleste.mx/ por parte de: " . $data->name . "\r\n" .
     "El mensaje: " . "\r\n" . $data->message;
     $cabeceras = $data->email . "\r\n" .
     'Reply-To: ' . $data->email . "\r\n" .
