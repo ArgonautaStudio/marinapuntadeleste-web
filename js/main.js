@@ -88,6 +88,11 @@ $(document).ready(function () {
     navMain.on("click", "a:not([data-toggle])", null, function () {
         navMain.collapse('hide');
     });
+
+    // $('#nexttab').on('click', function() {
+    //     $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+    // });
+
 });
 
 

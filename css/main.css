@@ -489,6 +489,21 @@ button.pinkButton {
   opacity: .7;
   color: #F4F4F4; }
 
+.nav {
+  cursor: pointer; }
+
+.pagination {
+  cursor: pointer; }
+
+.carousel {
+  cursor: pointer; }
+
+.panel-title {
+  cursor: pointer; }
+
+a {
+  cursor: pointer; }
+
 nav.navbar {
   position: fixed;
   z-index: 10;
@@ -511,5 +526,10 @@ nav.navbar {
         color: #FFFFFF;
         font-size: 1.5em;
         font-weight: bold; }
+
+/*Booking section*/
+div#bookingSteps {
+  padding-left: 19vw;
+  padding-right: 2vw; }
 
 /*# sourceMappingURL=main.css.map */

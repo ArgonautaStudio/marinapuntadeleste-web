@@ -644,6 +644,11 @@ button.pinkButton{
     opacity: .7;
     color: $white-color;
 }
+.nav{ cursor: pointer; }
+.pagination{ cursor: pointer; }
+.carousel{ cursor: pointer; }
+.panel-title{ cursor: pointer; }
+a { cursor: pointer; }
 
 nav.navbar{
     position: fixed;
@@ -679,3 +684,12 @@ nav.navbar{
         }
     }
 }
+
+/*Booking section*/
+
+div#bookingSteps{
+    padding-left: $sidebar-width + 2;
+    padding-right: 2vw;
+
+}
+

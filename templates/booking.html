@@ -1,0 +1,76 @@
+<div class="container-fluid">
+    <section class="fullHeightSection">
+        <div class="bookingView">
+            <div class="row" id="bookingRow">
+                <div class="col-xs-12 col-md-4 col-md-offset-8">
+                    <h1>
+                        <u>BOOK</u>ING</h1>
+
+                </div>
+                <div class="col-xs-12 col-md-8" id="bookingSteps">
+                    <div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation" class="active">
+                                <a data-target="#schedule" aria-controls="home" role="tab" data-toggle="tab">SCHEDULE</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-target="#info" aria-controls="profile" role="tab" data-toggle="tab">INFO</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-target="#terms" aria-controls="messages" role="tab" data-toggle="tab">TERMS</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-target="#extras" aria-controls="settings" role="tab" data-toggle="tab">EXTRAS</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-target="#checkout" aria-controls="settings" role="tab" data-toggle="tab">CHECKOUT</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="schedule">
+                                <div class="form-group">
+                                    <select name="activitySelect" id="activitySelect" class="form-control" ng-model="booking.activity" ng-options="tour as tour.nombre for tour in toursList"
+                                        ng-change="selectTimes(booking.activity)">
+                                        <option value="" disabled>Activity</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <p>DATE</p>
+                                    <div class="input-group date" data-provide="datepickerBooking">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="text" class="form-control pull-right" id="datepickerBooking" placeholder="Fecha" ng-model="booking.date">
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-if="availableTime">
+                                    <p>TIME</p>
+                                    <label class="radio-inline">
+                                        <input type="radio" ng-model="booking.time" value="1"> {{booking.activity.hora1}}
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" ng-model="booking.time" value="2"> {{booking.activity.hora2}}
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" ng-model="booking.time" value="4"> {{booking.activity.hora3}}
+                                    </label>
+
+                                </div>
+                                <button type="button" class="btn btn-default" ng-click="checkAvailability()">CONTINUE</button>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="info">...</div>
+                            <div role="tabpanel" class="tab-pane" id="terms">...</div>
+                            <div role="tabpanel" class="tab-pane" id="extras">...</div>
+                            <div role="tabpanel" class="tab-pane" id="checkout">...</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
