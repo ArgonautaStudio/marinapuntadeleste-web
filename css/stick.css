@@ -1,0 +1,96 @@
+/*
+*   Author: Alejandro Alamina
+*   Mail: alejandroalamina@gmail.com
+*   Date: Sep 16, 2016
+*/ 
+
+section[name="scuba-dive"]{
+    
+}  
+.scuba-dive{ 
+    position: relative;
+    height: 100%;
+    background-image: url('./../assets/images/tours/B.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scuba-dive:hover {
+    opacity: .3;
+    cursor: pointer; 
+    transition: opacity .5s;
+}
+.scuba{
+    background-color: #65A509; 
+    bottom: -0.05em;
+}
+.two-body{
+    margin-left: 0px; 
+    margin-right: 0px; 
+    padding-left: 0px; 
+    padding-right: 0px;
+} 
+.nepe:hover{
+    opacity: .5; 
+    cursor: pointer; 
+    transition: opacity .5s;
+}
+.image{
+    position: relative; 
+}
+.title {
+    position: absolute; 
+    text-align: right;
+    width: 100%; 
+    color: white;  
+    margin-bottom: 0;
+}
+
+.mangrove{
+    background-color: #ED2A50; 
+    bottom: -0.05em;
+} 
+
+.jungle{
+    background-color: #F69000; 
+    bottom: -0.0em;
+} 
+
+.boat{
+    background-color: #58595B; 
+    bottom: -0.0em;
+} 
+
+.aquabus{
+    background-color: #58595B;
+    bottom: -0.06em;
+} 
+
+section[name="coming"]
+{
+    position: relative; 
+    cursor:not-allowed;
+} 
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+.be{
+    position: absolute;
+    top:1em;  
+    left: 43em; 
+    color:white; 
+    opacity: .5;
+}
