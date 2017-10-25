@@ -1,0 +1,28 @@
+/*
+*   Author: Alejandro Alamina
+*   Mail: alejandroalamina@gmail.com
+*   Date: Sep 16, 2016
+*/ 
+
+section[name="scuba-dive"]{
+    height: 100%;
+    background-image: url('./../assets/images/tours/B.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.two-body{
+    margin-left: 0px; 
+    margin-right: 0px; 
+    padding-left: 0px; 
+    padding-right: 0px;
+} 
+
