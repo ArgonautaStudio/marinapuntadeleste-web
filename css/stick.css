@@ -25,6 +25,7 @@ section[name="scuba-dive"]{
 .scuba-dive:hover {
     opacity: .3;
     cursor: pointer; 
+    -webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
 .scuba{
@@ -39,7 +40,8 @@ section[name="scuba-dive"]{
 } 
 .nepe:hover{
     opacity: .5; 
-    cursor: pointer; 
+    cursor: pointer;  
+    -webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
 .image{
