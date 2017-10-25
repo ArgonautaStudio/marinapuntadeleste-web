@@ -24,5 +24,14 @@ section[name="scuba-dive"]{
     margin-right: 0px; 
     padding-left: 0px; 
     padding-right: 0px;
-} 
+}  
+.image{
+    position: relative; 
+}
+.title {
+   position: absolute; 
+   top: 200px; 
+   right: 0; 
+   width: 100%;   
+}
 
