@@ -1,0 +1,619 @@
+/*
+*   Author: Alejandro Alamina
+*   Mail: alejandroalamina@gmail.com
+*   Date: Sep 16, 2016
+*/
+
+/*BEGIN PICK TOUR SECTION*/
+section[name="scuba-dive"]{
+    
+}  
+.scuba-dive{ 
+    position: relative;
+    height: 100%;
+    background-image: url('./../assets/images/tours/B.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scuba-dive:hover {
+    opacity: .3;
+    cursor: pointer; 
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.scuba{
+    background-color: #65A509; 
+    bottom: -0.05em;
+}
+.two-body{
+    margin-left: 0px; 
+    margin-right: 0px; 
+    padding-left: 0px; 
+    padding-right: 0px;
+} 
+.nepe:hover{
+    opacity: .5; 
+    cursor: pointer;  
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.image{
+    position: relative; 
+}
+.title {
+    position: absolute; 
+    text-align: right;
+    width: 100%; 
+    color: white;  
+    margin-bottom: 0;
+}
+
+.mangrove{
+    background-color: #ED2A50; 
+    bottom: -0.05em;
+} 
+
+.jungle{
+    background-color: #F69000; 
+    bottom: -0.0em;
+} 
+
+.boat{
+    background-color: #58595B; 
+    bottom: -0.0em;
+} 
+
+.aquabus{
+    background-color: #58595B;
+    bottom: -0.06em;
+} 
+
+section[name="coming"]
+{
+    position: relative; 
+    cursor:not-allowed;
+} 
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+.be{
+    position: absolute;
+    top:1em;  
+    left: 43em; 
+    color:white; 
+    opacity: .5;
+} 
+
+/*END PICK TOUR SECTION*/ 
+
+/*BEGIN SCUBA ACTIVITIE*/
+    /*Begin Scuba Activitie*/ 
+section[name="scuba-act-intro"]{ 
+    position: relative;
+    height: 100%;
+    background-image: url('../assets/images/tours/ScubaDive_Top_03.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.triangulo{
+    position: absolute; 
+    bottom: .2em; 
+    right: 0em;
+    
+} 
+.logo-act{
+    position: absolute; 
+    bottom: 6.5em; 
+    right: .3em;
+    width:  340px; 
+    height: auto;
+} 
+
+.title-act{
+    position: absolute; 
+    bottom: .2em; 
+    right: .3em; 
+    color:white;
+} 
+.title2-act{ 
+    
+    color: #65A509; 
+    font-weight: 700; 
+    font-size: 1em;
+}
+
+section[name="scuba-act-intro"] .underline {
+    text-decoration: underline; 
+    text-decoration-color: #65A509; 
+    font-weight: 700; 
+    font-size: 1em;
+} 
+    /*End Scuba Activitie INTRO*/
+    
+    /*Begin Scuba Activitie BODY*/
+
+section[name="scuba-act-body"]{ 
+    background-image: url('../assets/images/tours/ScubaDive_Content.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+    position: relative;
+}  
+
+.scuba-act{
+    width: 100%;
+    height: 100%; 
+    padding-left: 0px; 
+    padding-right: 0px;
+}
+
+.scuba-info{
+    width: 50%;
+}
+
+.cuadro-scuba 
+{
+    padding-top: px;
+    height: 100%;
+    width: 111%;
+    float: left;
+    background-color: rgba(0,123,164, .80);
+}  
+
+.act-title{
+    color: white; 
+    padding-left: 4.1em; 
+    margin-bottom: .5em;
+} 
+.act-title-scuba{
+    color: #65A509; 
+    font-weight: 700; 
+    font-size: 1em;
+} 
+
+.act-nav{ 
+    padding-left: 17em;
+} 
+
+.nav-noactive{
+    color: white; 
+    border-top: 1px;
+    border-top: white; 
+    font-weight: 700; 
+    font-size: 1.08em;
+}
+/*Description*/
+.nav-description-p{
+    color: white; 
+    font-weight: 300; 
+    margin-top: 1em;
+} 
+
+.fa-calendar{
+    color: white; 
+    font-size: 2.8em; 
+    margin-top: .3em; 
+    margin-bottom: .3em; 
+} 
+
+.fa-clock-o{
+    color: white; 
+    font-size: 2.8em; 
+    margin-top: .3em; 
+    margin-bottom: .3em;
+} 
+
+.fa-hourglass-end {
+    color: white; 
+    font-size: 2.8em; 
+    margin-top: .3em; 
+    margin-bottom: .3em; 
+} 
+
+.icon-text{
+    display: inline-block;
+    color: white; 
+    margin-left: .6em;
+}  
+.icon-text-1{
+    display: flex;
+    color: white; 
+    margin-left: 4em; 
+    margin-top: .1em;
+}
+/*Include*/
+.nav-included-title {
+    font-weight: 700; 
+    color: white; 
+    margin-top: 2em; 
+    margin-left: 1.5em;    
+} 
+.panel1{
+    border-right: 1px solid white; 
+
+} 
+
+.panel2{  
+
+}
+.fa-globe{
+    color: white; 
+    font-size: 2.8em; 
+    margin-top: .3em; 
+    margin-bottom: .3em; 
+    margin-left: 1em; 
+}
+
+.fa-lock{
+    color: white; 
+    font-size: 2.9em; 
+    margin-top: .3em; 
+    margin-bottom: .3em;  
+    margin-left: 1em;
+}
+
+.fa-cutlery{
+    color: white; 
+    font-size: 2.8em; 
+    margin-top: .3em; 
+    margin-bottom: .3em; 
+    margin-left: 1em;
+} 
+
+.fa-money{
+    color: white; 
+    font-size: 2.8em; 
+    margin-top: .3em; 
+    margin-bottom: .3em; 
+    margin-left: 1em; 
+} 
+
+.fa-camera{
+    color: white; 
+    font-size: 2.8em; 
+    margin-top: .3em; 
+    margin-bottom: .3em; 
+    margin-left: 1em;  
+}  
+/*First Time Divers*/
+.nav-first-title{
+    color:white; 
+    font-weight: 700; 
+    margin-top: 2em; 
+    font-size: 2em;
+} 
+.nav-first-title2{
+    color: #BFBA13; 
+    font-weight: 700;
+} 
+
+.nav-first-p{
+   color:white; 
+} 
+.fa-long-arrow-down{
+    color: white; 
+    font-size: 2.8em; 
+    margin-top: .3em; 
+    margin-bottom: .3em; 
+    margin-left: 1em;
+}
+
+/*Experienced*/
+.nav-experienced-title{
+    color:white; 
+    font-weight: 700; 
+    margin-top: 2em; 
+    font-size: 2em;   
+} 
+.nav-experienced-title2{
+    color: #BFBA13; 
+    font-weight: 700;
+} 
+.nav-experienced-p{
+    color:white;
+}
+/*Non Diver*/
+.nav-non-title{
+    color:white; 
+    font-weight: 700; 
+    margin-top: 2em; 
+    font-size: 2em;
+} 
+
+.nav-non-title2{
+    color: #BFBA13; 
+    font-weight: 700;
+} 
+
+.nav-non-p{
+    color:white;
+}  
+
+/*BOOK NOW*/ 
+.scuba-act-button{ 
+    position: absolute; 
+    top: 8.7em; 
+    right: 0em;
+    width: 225px;
+    height: 80px;
+    background: rgba(101,165,9, .70);
+    border: none;
+} 
+.scuba-act-button p{ 
+    text-align: right;
+    color: white;
+    font-weight: 700; 
+    font-size: 2em; 
+    padding-right: 1em;
+} 
+/*END SCUBA ACTIVITIE*/ 
+
+/*BEGIN MANGROVE ACTIVITIE*/ 
+    /*Begin MAngrove Activitie INTRO*/
+section[name="mangrove-act-intro"]{ 
+    position: relative;
+    height: 100%;
+    background-image: url('../assets/images/tours/MPE_MT_Top_03.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+ 
+.title3-act{ 
+    color: #ED2A50; 
+    font-weight: 700; 
+    font-size: 1em;
+}
+
+section[name="mangrove-act-intro"] .underline {
+    text-decoration: underline; 
+    text-decoration-color: #ED2A50; 
+    font-weight: 700; 
+    font-size: 1em;
+}  
+
+section[name="mangrove-act-body"]{ 
+    background-image: url('../assets/images/tours/MPE_MT_Top_02.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+    position: relative;
+}  
+.cuadro-mangrove 
+{
+    padding-top: 0px;
+    height: 100%;
+    width: 111%;
+    float: left;
+    background-color: rgba(3,130,61, .70);
+}  
+
+.act-title{
+    color: white; 
+    padding-left: 4.1em; 
+    margin-bottom: .5em;
+} 
+.act-title-mangrove{
+    color: #ED2A50; 
+    font-weight: 700; 
+    font-size: 1em;
+} 
+
+.nav-mangrove-title{
+    color:#ED2A50; 
+    font-weight: 700; 
+    margin-top: 2em; 
+    font-size: 2em;    
+}
+.nav-jungle-titleGreen 
+{
+    padding-left: 1.8em;
+    color: #BFBA13; 
+    font-weight: 700; 
+} 
+.icon-underText{
+    font-weight: 100;
+    font-size: .8em; 
+    color: white; 
+    width: 70%
+} 
+.nav-aux{ 
+    margin-top: 0px; 
+    padding-top: 0px;
+    padding-left: 6em;
+} 
+.aux {
+    margin-bottom: 0px; 
+    padding-bottom: 0px;
+} 
+.icon-text-speed{
+    display: inline-block;
+    color: white; 
+    margin-left: .6em; 
+    margin-bottom: 0px;
+} 
+
+.mangrove-act-button{ 
+    position: absolute; 
+    top: 8.7em; 
+    right: 0em;
+    width: 225px;
+    height: 80px;
+    background: rgba(237,42,80, .70);
+    border: none;
+} 
+.mangrove-act-button p{ 
+    text-align: right;
+    color: white;
+    font-weight: 700; 
+    font-size: 2em; 
+    padding-right: 1em;
+}
+
+/*END MANGROVE ACTIVITIE*/ 
+
+/*BEGIN JUNGLE ACTIVITIE*/
+section[name="jungle-act-intro"]{ 
+    position: relative;
+    height: 100%;
+    background-image: url('../assets/images/tours/JungleTour_Top_01.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+ 
+.title4-act{ 
+    
+    color: #F96900; 
+    font-weight: 700; 
+    font-size: 1em;
+}
+
+section[name="jungle-act-intro"] .underline {
+    text-decoration: underline; 
+    text-decoration-color: #F96900; 
+    font-weight: 700; 
+    font-size: 1em;
+}  
+
+section[name="jungle-act-body"]{ 
+    background-image: url('../assets/images/tours/JungleTour_Content.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+    position: relative;
+}  
+.cuadro-jungle 
+{
+    padding-top: px;
+    height: 100%;
+    width: 111%;
+    float: left;
+    background-color: rgba(101,165,9, .70);
+}  
+
+.act-title{
+    color: white; 
+    padding-left: 4.1em; 
+    margin-bottom: .5em;
+} 
+.act-title-jungle{
+    color: #F96900; 
+    font-weight: 700; 
+    font-size: 1em;
+} 
+
+.nav-jungle-title{
+    color:#F96900; 
+    font-weight: 700; 
+    margin-top: 2em; 
+    font-size: 2em;    
+}
+.nav-jungle-titleGreen 
+{
+    padding-left: 1.8em;
+    color: #BFBA13; 
+    font-weight: 700; 
+} 
+.icon-underText{
+    font-weight: 100;
+    font-size: .8em; 
+    color: white; 
+    width: 70%
+} 
+.nav-aux{ 
+    margin-top: 0px; 
+    padding-top: 0px;
+    padding-left: 6em;
+} 
+.aux {
+    margin-bottom: 0px; 
+    padding-bottom: 0px;
+} 
+.icon-text-speed{
+    display: inline-block;
+    color: white; 
+    margin-left: .6em; 
+    margin-bottom: 0px;
+} 
+
+.jungle-act-button{ 
+    position: absolute; 
+    top: 8.7em; 
+    right: 0em;
+    width: 225px;
+    height: 80px;
+    background: rgba(249,105,0, .70);
+    border: none;
+} 
+.jungle-act-button p{ 
+    text-align: right;
+    color: white;
+    font-weight: 700; 
+    font-size: 2em; 
+    padding-right: 1em;
+}
+/**/
+
+ 
