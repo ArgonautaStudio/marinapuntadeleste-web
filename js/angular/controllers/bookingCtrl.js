@@ -4,7 +4,8 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
         adult: 0,
         child: 0,
         infant: 0,
-        Info: {}
+        Info: {},
+        Extras: {}
     };
     $scope.availableTime = false;
     $scope.bookingTabs = {
@@ -65,10 +66,39 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
         bookingStatus();
     }, true);
 
-    //Jquery
+    //Jquery and JS
     $('#datepickerBooking').datepicker({
         autoclose: true
     });
+
+    paypal.Button.render({
+        funding: {
+            allowed: [ paypal.FUNDING.CARD ]
+        },
+        env: 'sandbox',
+        client: {
+            sandbox: 'AYDB0oHxL_sQEDiX6MzuT1D0G6HISqecF-N-Z4NmTLJlrx7YAd8QuGF9EG7UhjK62yn6-6h87tfG1Yvu',
+            production: 'AYDB0oHxL_sQEDiX6MzuT1D0G6HISqecF-N-Z4NmTLJlrx7YAd8QuGF9EG7UhjK62yn6-6h87tfG1Yvu'
+        },
+        commit: true,
+        payment: function (data, actions) {
+            return actions.payment.create({
+                payment: {
+                    transactions: [
+                        {
+                            amount: { total: '1.00', currency: 'USD' }
+                        }
+                    ]
+                }
+            });
+        },
+        onAuthorize: function (data, actions) {
+            return actions.payment.execute().then(function (payment) {
+                console.log(payment);
+            });
+        }
+    }, '#paypal-button');
+
 
     if ($location.path() == '/booking') {
         // $scope.booking.schedule.disabled = false;

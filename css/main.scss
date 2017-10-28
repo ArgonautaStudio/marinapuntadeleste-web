@@ -570,7 +570,7 @@ footer{
     height: 100% !important;
 }
 
-button.moreInfoButton{
+a.moreInfoButton{
     position: absolute;
     bottom: 20%;
     background-color: transparent;
@@ -697,7 +697,7 @@ span.bookintTicketsNumber{
 }
 section#bookingSection{
     min-height: 100%;
-    background-image: url('./../assets/images/Water.jpg');
+    background-image: url('./../assets/images/Background_Booking.jpg');
     background-repeat: no-repeat; 
     background-position: top; 
     -webkit-background-size: cover; 

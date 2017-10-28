@@ -158,15 +158,60 @@
                                 <p>TERMS & CONDITIONS</p>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="">Option 1</label>
+                                        <input type="checkbox" value="" ng-model="booking.aceptDockFee">I agree to pay an aditional $10.00 USD per person dock fee directly at Marina Punta
+                                        del Este</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="">Option 2</label>
+                                        <input type="checkbox" value="" ng-model="booking.aceptTerms">I agree to Marina Punta del Este
+                                        <a href="">Terms of Service</a>
+                                    </label>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="extras">...</div>
-                            <div role="tabpanel" class="tab-pane" id="checkout">...</div>
+                            <div role="tabpanel" class="tab-pane" id="extras">
+                                <p>EXTRAS</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-sm" ng-click="booking.Extras.wetsuit = booking.Extras.wetsuit - 1">-</button>
+                                            <span class="bookintTicketsNumber" ng-model="booking.Extras.wetsuit" ng-bind="booking.Extras.wetsuit"></span>
+                                            <button class="btn btn-primary btn-sm" ng-click="booking.Extras.wetsuit = booking.Extras.wetsuit + 1">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="">Wetsuit</label>
+                                                    <p>$10.00 EACH</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-sm" ng-click="booking.Extras.mask = booking.Extras.mask - 1">-</button>
+                                            <span class="bookintTicketsNumber" ng-model="booking.Extras.mask" ng-bind="booking.Extras.mask"></span>
+                                            <button class="btn btn-primary btn-sm" ng-click="booking.Extras.mask = booking.Extras.mask + 1">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="">Prescription Mask</label>
+                                                    <p>$10.00 EACH</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="checkout">
+                                <div id="paypal-button"></div>
+                            </div>
                         </div>
 
                     </div>
