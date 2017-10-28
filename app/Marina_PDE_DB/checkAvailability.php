@@ -13,9 +13,9 @@ if (!$post) {
             throw new Exception('Missing arguments');
         }
         $CHECK_AVAILABILITY_QUERY = $db->prepare('
-        SELECT SUM(ft.turistas) as ocupado, t.capacidad
+        SELECT SUM(ft.turistas) as ocupado, t.capacidad, t.precioAdultoUS, t.precioNinoUS, 0 as precioInfanteUs
         FROM fechatour ft
-        LEFT JOIN tour t
+        INNER JOIN tour t
         ON ft.idTour = t.idtour
         WHERE ft.idTour = :idTour AND ft.horario = :time AND ft.fecha = :date');
         $CHECK_AVAILABILITY_QUERY->bindParam(':idTour', $data->activity->idTour);
@@ -24,13 +24,38 @@ if (!$post) {
         $CHECK_AVAILABILITY_QUERY->execute();
         $CHECK_AVAILABILITY_QUERY->bindColumn('ocupado', $_ocupado);
         $CHECK_AVAILABILITY_QUERY->bindColumn('capacidad', $_capacidad);
+        $CHECK_AVAILABILITY_QUERY->bindColumn('precioAdultoUS', $_adultoPrecio);
+        $CHECK_AVAILABILITY_QUERY->bindColumn('precioNinoUS', $_ninoPrecio);
+        $CHECK_AVAILABILITY_QUERY->bindColumn('precioInfanteUs', $_infantePrecio);
+        echo $_ocupado;
+        echo $_capacidad;
         if ($CHECK_AVAILABILITY_QUERY->rowCount() == 1) {
             $CHECK_AVAILABILITY_QUERY->fetch(PDO::FETCH_BOUND);
             $_tickets = $_capacidad - $_ocupado;
             if ($_ocupado <= $_capacidad) {
-                echo json_encode(['error'=>false, 'message'=>'Available', 'av'=>true, 'tickets'=>$_tickets]);
+                echo json_encode([
+                    'error'=>false,
+                    'message'=>'Available',
+                    'av'=>true,
+                    'tickets'=>$_tickets,
+                    'precios'=>[
+                        'precioAdulto'=>$_adultoPrecio,
+                        'precioNino'=>$_ninoPrecio,
+                        'precioInfante'=>$_infantePrecio
+                    ]
+                    ]);
             } else {
-                echo json_encode(['error'=>false, 'message'=>'Unavailable', 'av'=>false, 'tickets'=>$_tickets]);
+                echo json_encode([
+                    'error'=>false,
+                    'message'=>'Unavailable',
+                    'av'=>false,
+                    'tickets'=>$_tickets,
+                    'precios'=>[
+                        'precioAdulto'=> 0,
+                        'precioNino'=> 0,
+                        'precioInfante'=> 0
+                    ]
+                    ]);
             }
         } else {
             throw new Exception('Data base error');

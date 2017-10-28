@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <section class="fullHeightSection">
+    <section id="bookingSection" class="fullHeightSection">
         <div class="bookingView">
             <div class="row" id="bookingRow">
                 <div class="col-xs-12 col-md-4 col-md-offset-8">
@@ -12,7 +12,7 @@
 
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs nav-justified" role="tablist">
-                            <li role="presentation" class="active">
+                            <li role="presentation" class="active" disabled>
                                 <a data-target="#schedule" aria-controls="home" role="tab" data-toggle="tab">SCHEDULE</a>
                             </li>
                             <li role="presentation">
@@ -59,10 +59,112 @@
                                     </label>
 
                                 </div>
-                                <button type="button" class="btn btn-default" ng-click="checkAvailability()">CONTINUE</button>
+                                <button type="button" class="btn btn-default" ng-click="checkAvailability()" ng-disabled="bookingTabs.schedule">CONTINUE</button>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="info">...</div>
-                            <div role="tabpanel" class="tab-pane" id="terms">...</div>
+
+                            <div role="tabpanel" class="tab-pane" id="info">
+                                <div ng-if="bookingData.precios && !bookingTabs.schedule">
+                                    <p>TICKETS</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-sm" ng-click="booking.adult = booking.adult - 1">-</button>
+                                                <span class="bookintTicketsNumber" ng-model="booking.adult" ng-bind="booking.adult"></span>
+                                                <button class="btn btn-primary btn-sm" ng-click="booking.adult = booking.adult + 1">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-8">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">Adult</label>
+                                                        <p>{{bookingData.precios.precioAdulto | currency}} EACH</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p>12 - 65 years</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-sm" ng-click="booking.child = booking.child - 1">-</button>
+                                                <span class="bookintTicketsNumber" ng-model="booking.child" ng-bind="booking.child"></span>
+                                                <button class="btn btn-primary btn-sm" ng-click="booking.child = booking.child + 1">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-8">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <div class="form-gro">
+                                                        <label for="">Child</label>
+                                                        <p> {{bookingData.precios.precioNino | currency}} EACH</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p>5 - 11 years</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-sm" ng-click="booking.infant = booking.infant - 1">-</button>
+                                                <span class="bookintTicketsNumber" ng-model="booking.infant" ng-bind="booking.infant"></span>
+                                                <button class="btn btn-primary btn-sm" ng-click="booking.infant = booking.infant + 1">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-8">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">Infant</label>
+                                                        <p> {{bookingData.precios.precioInfante | currency}} EACH </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p>Up to 5 years</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>CONTACT INFO</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <input type="text" class="form-control" ng-model="booking.Info.nombre" placeholder="First name">
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <input type="text" class="form-control" ng-model="booking.Info.apellido" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <input type="text" class="form-control" ng-model="booking.Info.telefono" placeholder="Phone number">
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <input type="email" class="form-control" ng-model="booking.Info.correo" placeholder="Email">
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-default" ng-disabled="bookingTabs.info">CONTINUE</button>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="terms">
+                                <p>TERMS & CONDITIONS</p>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Option 1</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Option 2</label>
+                                </div>
+                            </div>
                             <div role="tabpanel" class="tab-pane" id="extras">...</div>
                             <div role="tabpanel" class="tab-pane" id="checkout">...</div>
                         </div>
