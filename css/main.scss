@@ -710,11 +710,6 @@ nav.navbar{
 
 /*Booking section*/
 
-div#bookingSteps{
-    padding-left: $sidebar-width + 2;
-    padding-right: 2vw;
-
-}
 span.bookintTicketsNumber{
     font-size: 1.5em;
 }
@@ -727,4 +722,21 @@ section#bookingSection{
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
+    padding-left: 14vw;
+    
+    div.bookingView{
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, .5);
+        height: 100%;
+    }
+
+    ul.nav.nav-tabs.nav-justified {
+        background-color: #00a9cf;
+        li{
+            a{
+                color: #ffffff;
+            }
+        }
+    }
 }
