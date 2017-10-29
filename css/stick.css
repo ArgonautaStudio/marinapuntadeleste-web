@@ -670,6 +670,23 @@ section[name="jungle-act-body"]{
   opacity: 1;
   right: 0;
 }
-/**/
+/*END JUNGLE ACTIVITIE*/
 
+/*BEGIN DISCOUNTS*/  
+section[name="discount-intro"]{ 
+    position: relative;
+    height: 100%;
+    background-image: url('../assets/images/discount/discounts.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*END DISCOUNTS*/
  
