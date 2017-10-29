@@ -179,7 +179,8 @@ section[name="scuba-act-body"]{
 }
 
 .scuba-info{
-    width: 50%;
+    width: 50%; 
+    height: 100%; 
 }
 
 .cuadro-scuba 
@@ -193,7 +194,7 @@ section[name="scuba-act-body"]{
 
 .act-title{
     color: white; 
-    padding-left: 4.1em; 
+    padding-left: 14.1vw; 
     margin-bottom: .5em;
 } 
 .act-title-scuba{
@@ -203,7 +204,7 @@ section[name="scuba-act-body"]{
 } 
 
 .act-nav{ 
-    padding-left: 17em;
+    padding-left: 14.1vw;
 } 
 
 .nav-noactive{
@@ -370,13 +371,34 @@ section[name="scuba-act-body"]{
     background: rgba(101,165,9, .70);
     border: none;
 } 
-.scuba-act-button p{ 
+.scuba-act-button span{ 
     text-align: right;
     color: white;
-    font-weight: 700; 
+    font-weight: 500; 
     font-size: 2em; 
-    padding-right: 1em;
-} 
+    padding-right: 1em; 
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}  
+
+.scuba-act-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.scuba-act-button:hover span {
+  padding-right: 25px;
+}
+
+.scuba-act-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 /*END SCUBA ACTIVITIE*/ 
 
 /*BEGIN MANGROVE ACTIVITIE*/ 
@@ -411,7 +433,7 @@ section[name="mangrove-act-intro"] .underline {
 }  
 
 section[name="mangrove-act-body"]{ 
-    background-image: url('../assets/images/tours/MPE_MT_Top_02.jpg');
+    background-image: url('../assets/images/tours/MPE_MT_Content.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-position: top; 
@@ -434,11 +456,7 @@ section[name="mangrove-act-body"]{
     background-color: rgba(3,130,61, .70);
 }  
 
-.act-title{
-    color: white; 
-    padding-left: 4.1em; 
-    margin-bottom: .5em;
-} 
+
 .act-title-mangrove{
     color: #ED2A50; 
     font-weight: 700; 
@@ -485,15 +503,36 @@ section[name="mangrove-act-body"]{
     right: 0em;
     width: 225px;
     height: 80px;
-    background: rgba(237,42,80, .70);
+    background: #ED2A50;
     border: none;
 } 
-.mangrove-act-button p{ 
+.mangrove-act-button span{ 
     text-align: right;
     color: white;
-    font-weight: 700; 
+    font-weight: 500; 
     font-size: 2em; 
-    padding-right: 1em;
+    padding-right: 1em; 
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}  
+
+.mangrove-act-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.mangrove-act-button:hover span {
+  padding-right: 25px;
+}
+
+.mangrove-act-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /*END MANGROVE ACTIVITIE*/ 
@@ -553,11 +592,7 @@ section[name="jungle-act-body"]{
     background-color: rgba(101,165,9, .70);
 }  
 
-.act-title{
-    color: white; 
-    padding-left: 4.1em; 
-    margin-bottom: .5em;
-} 
+
 .act-title-jungle{
     color: #F96900; 
     font-weight: 700; 
@@ -604,15 +639,36 @@ section[name="jungle-act-body"]{
     right: 0em;
     width: 225px;
     height: 80px;
-    background: rgba(249,105,0, .70);
+    background: #f96900;
     border: none;
 } 
-.jungle-act-button p{ 
+.jungle-act-button span{ 
     text-align: right;
     color: white;
-    font-weight: 700; 
+    font-weight: 500; 
     font-size: 2em; 
-    padding-right: 1em;
+    padding-right: 1em; 
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}  
+
+.jungle-act-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.jungle-act-button:hover span {
+  padding-right: 25px;
+}
+
+.jungle-act-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 /**/
 
