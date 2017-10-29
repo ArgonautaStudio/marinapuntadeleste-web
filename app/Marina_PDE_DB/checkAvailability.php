@@ -27,8 +27,6 @@ if (!$post) {
         $CHECK_AVAILABILITY_QUERY->bindColumn('precioAdultoUS', $_adultoPrecio);
         $CHECK_AVAILABILITY_QUERY->bindColumn('precioNinoUS', $_ninoPrecio);
         $CHECK_AVAILABILITY_QUERY->bindColumn('precioInfanteUs', $_infantePrecio);
-        echo $_ocupado;
-        echo $_capacidad;
         if ($CHECK_AVAILABILITY_QUERY->rowCount() == 1) {
             $CHECK_AVAILABILITY_QUERY->fetch(PDO::FETCH_BOUND);
             $_tickets = $_capacidad - $_ocupado;

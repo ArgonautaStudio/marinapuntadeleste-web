@@ -549,7 +549,11 @@ nav.navbar {
 
 /*Booking section*/
 span.bookintTicketsNumber {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  text-decoration: underline;
+  text-decoration-color: #00A9CF;
+  margin-left: 10px;
+  margin-right: 10px; }
 
 section#bookingSection {
   min-height: 100%;
@@ -566,9 +570,47 @@ section#bookingSection {
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.5);
     height: 100%; }
+    section#bookingSection div.bookingView p.bookingSectionSubtitle {
+      background-color: #FFFFFF;
+      color: #404142;
+      font-size: 1em;
+      font-weight: bold;
+      padding: 4px 10px; }
+    section#bookingSection div.bookingView .input-group-addon {
+      font-size: .3em; }
+    section#bookingSection div.bookingView button.bookingButtonContinue {
+      background-color: #007CA6;
+      color: #fff;
+      width: 100%;
+      margin-bottom: 10px; }
+    section#bookingSection div.bookingView input.bookingInfoInput {
+      border-radius: 0px;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      border-bottom: 3px solid #007CA6;
+      color: #000;
+      font-weight: bold; }
+    section#bookingSection div.bookingView input.bookingInfoInput::-webkit-input-placeholder {
+      color: #000;
+      font-weight: bold; }
+    section#bookingSection div.bookingView label.bookingTerms {
+      font-size: 1.5em;
+      font-weight: bold; }
   section#bookingSection ul.nav.nav-tabs.nav-justified {
-    background-color: #00a9cf; }
+    background-color: #00a9cf;
+    margin-bottom: 10px; }
     section#bookingSection ul.nav.nav-tabs.nav-justified li a {
-      color: #ffffff; }
+      font-weight: bold;
+      color: #ffffff;
+      opacity: .6; }
+    section#bookingSection ul.nav.nav-tabs.nav-justified li.active a {
+      background: none;
+      opacity: 1;
+      border: none; }
+
+button.btn-circle {
+  border-radius: 100%; }
 
 /*# sourceMappingURL=main.css.map */
