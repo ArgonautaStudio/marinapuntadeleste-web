@@ -20,6 +20,9 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: 'templates/booking.html',
             controller: 'bookingCtrl'
         })
+        .when('/discounts', {
+            templateUrl: 'templates/discounts.html'
+        })
         .otherwise({
             redirectTo: '/'
         });

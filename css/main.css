@@ -4,7 +4,8 @@ div.container-fluid {
   height: 100%; }
   div.container-fluid section.fullHeightSection {
     min-height: 100%;
-    position: relative; }
+    position: relative;
+    height: 100%; }
 
 .sectionTitle {
   margin: 0px; }
@@ -438,7 +439,8 @@ footer {
   height: 100% !important; }
 
 .carousel-inner > .item > img {
-  height: 100% !important; }
+  height: 100% !important;
+  width: 100%; }
 
 a.moreInfoButton {
   position: absolute;

@@ -6,6 +6,7 @@ div.container-fluid {
     section.fullHeightSection {
         min-height: 100%;
         position: relative;
+        height: 100%;
     }
 }
 
@@ -589,6 +590,7 @@ footer{
 
 .carousel-inner > .item > img {
     height: 100% !important;
+    width: 100%;
 }
 
 a.moreInfoButton{
