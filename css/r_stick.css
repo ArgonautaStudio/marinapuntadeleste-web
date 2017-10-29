@@ -158,14 +158,13 @@
     .discount-info{
         width: 32%;
     } 
-    .discount-button{
-        top:60.7em;
-    } 
+ 
 }  
 
 @media screen and (max-width: 1280px) and (min-width: 1025px ) {
-        .discount-button{
-        top:50.7em;
+
+    .discount-info{
+        width: 28%;
     }
 }
 
