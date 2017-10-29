@@ -28,61 +28,61 @@ $(document).ready(function () {
         interval: 3000
     })
 
-    $('#contactForm').bootstrapValidator({
-        message: "Invalid",
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            name: {
-                validators: {
-                    notEmpty: {
-                        message: "This field is required"
-                    },
-                }
-            },
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: "This field is required"
-                    },
-                    emailAddress: {
-                        message: "This field must contain a valid email address"
-                    }
-                }
-            },
-            message: {
-                validators: {
-                    notEmpty: {
-                        message: "This field is required"
-                    }
-                }
-            }
-        }
-    }).on('success.form.bv', function (e) {
-        console.log('send');
-        e.preventDefault();
-        var $form = $(e.target);
-        var bv = $form.data('bootstrapValidator');
-        $.post($form.attr('action'), $form.serialize(), function (result) {
-            console.log(result);
-            // document.getElementById("contactForm").reset();
-            // if (!result.error) {
-            //     $('.success-send').fadeIn();
-            //     setTimeout(function () {
-            //         $('.success-send').fadeOut();
-            //     }, 2000)
-            // } else {
-            //     $('.error-send').fadeIn();
-            //     setTimeout(function () {
-            //         $('.error-send').fadeOut();
-            //     }, 2000)
-            // }
+    // $('#contactForm').bootstrapValidator({
+    //     message: "Invalid",
+    //     feedbackIcons: {
+    //         valid: 'glyphicon glyphicon-ok',
+    //         invalid: 'glyphicon glyphicon-remove',
+    //         validating: 'glyphicon glyphicon-refresh'
+    //     },
+    //     fields: {
+    //         name: {
+    //             validators: {
+    //                 notEmpty: {
+    //                     message: "This field is required"
+    //                 },
+    //             }
+    //         },
+    //         email: {
+    //             validators: {
+    //                 notEmpty: {
+    //                     message: "This field is required"
+    //                 },
+    //                 emailAddress: {
+    //                     message: "This field must contain a valid email address"
+    //                 }
+    //             }
+    //         },
+    //         message: {
+    //             validators: {
+    //                 notEmpty: {
+    //                     message: "This field is required"
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }).on('success.form.bv', function (e) {
+    //     console.log('send');
+    //     e.preventDefault();
+    //     var $form = $(e.target);
+    //     var bv = $form.data('bootstrapValidator');
+    //     $.post($form.attr('action'), $form.serialize(), function (result) {
+    //         console.log(result);
+    //         // document.getElementById("contactForm").reset();
+    //         // if (!result.error) {
+    //         //     $('.success-send').fadeIn();
+    //         //     setTimeout(function () {
+    //         //         $('.success-send').fadeOut();
+    //         //     }, 2000)
+    //         // } else {
+    //         //     $('.error-send').fadeIn();
+    //         //     setTimeout(function () {
+    //         //         $('.error-send').fadeOut();
+    //         //     }, 2000)
+    //         // }
 
-        }, 'json');
-    });
+    //     }, 'json');
+    // });
 
     var navMain = $(".navbar-collapse");
     navMain.on("click", "a:not([data-toggle])", null, function () {

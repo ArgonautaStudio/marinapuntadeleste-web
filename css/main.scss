@@ -458,6 +458,20 @@ section#contactSection{
             }
 
             div#formContact{
+                div.form-message{
+                    background-color: $white-color;
+                    widows: 100%;
+                    margin: 10px 0px;
+                    padding: 5px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        font-size: 12px;
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                }
                 div.mailsend-info{
                         display: none;
                 }
@@ -531,6 +545,9 @@ section#contactSection{
 
                 div#map{
                     width: 100%;
+                    margin: 10px 0px;
+                    padding: 0px;
+
                 }
             }
         }
@@ -546,6 +563,9 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: #022c38;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
     p{
         color: $white-color;
         font-weight: bold;

@@ -23,6 +23,7 @@
     <style>
         .mainContainer {
             height: 100%;
+            position: relative;
         }
     </style>
 </head>
@@ -30,6 +31,7 @@
 <body>
 
     <div ng-include="'./templates/shared/navigation.html'"></div>
+    
     <section ng-view class="mainContainer">
     </section>
 
@@ -48,7 +50,7 @@
     <script src="js/angular/config.js"></script>
     <script src="js/angular/ui-bootstrap.min.js"></script>
     <script src="js/angular/controllers/bookingCtrl.js"></script>
-    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>    
 </body>
 
 </html>

@@ -2,14 +2,24 @@ var app = angular.module('bookingApp', ['ngRoute', 'ui.bootstrap']);
 
 app.controller('mainCtrl', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
 
-    /**
-     * Contact Form
-     */
     $scope.formInput = {};
+    $scope.formMessageText = '';
+
+    function showMessage_f() {
+        //Work with scope.contactForm
+        $scope.formMessagetext = 'All fields are required';
+        $scope.showFormMessage = true;
+    };
 
     $scope.validarCorreo = function () {
-        console.log('Validar formulario');
-        console.log($scope.contactForm.$valid);
-        console.log($scope.formInput);
+        if ($scope.contactForm.$valid) {
+            $scope.showFormMessage = false;
+            $scope.formMessagetext = '';
+            console.log($scope.formInput);
+            $scope.formInput = {};
+            alert('Must send form data...');
+        } else {
+            showMessage_f();
+        }
     };
 }]);

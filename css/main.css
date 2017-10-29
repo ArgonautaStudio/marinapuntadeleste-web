@@ -341,6 +341,18 @@ section#contactSection {
         font-size: 1.5em;
         color: #FFFFFF;
         font-weight: bold; }
+      section#contactSection div.contact div#contactRow div#formContact div.form-message {
+        background-color: #F4F4F4;
+        widows: 100%;
+        margin: 10px 0px;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section#contactSection div.contact div#contactRow div#formContact div.form-message p {
+          font-size: 12px;
+          margin: 0px;
+          padding: 0px; }
       section#contactSection div.contact div#contactRow div#formContact div.mailsend-info {
         display: none; }
       section#contactSection div.contact div#contactRow div#formContact button {
@@ -392,7 +404,9 @@ section#contactSection {
         margin: 0px !important;
         padding: 0px !important; }
       section#contactSection div.contact div#contactRow div#formContact div#map {
-        width: 100%; }
+        width: 100%;
+        margin: 10px 0px;
+        padding: 0px; }
 
 /*Footer*/
 footer {
@@ -402,7 +416,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #022c38; }
+  background-color: #022c38;
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
   footer p {
     color: #F4F4F4;
     font-weight: bold;
