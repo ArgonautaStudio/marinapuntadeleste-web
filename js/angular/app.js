@@ -7,6 +7,7 @@ app.controller('mainCtrl', ['$scope', '$http', '$rootScope', function ($scope, $
 
     function showMessage_f() {
         //Work with scope.contactForm
+        $scope.formMessageType = false;
         $scope.formMessagetext = 'All fields are required';
         $scope.showFormMessage = true;
     };
@@ -16,8 +17,15 @@ app.controller('mainCtrl', ['$scope', '$http', '$rootScope', function ($scope, $
             $scope.showFormMessage = false;
             $scope.formMessagetext = '';
             console.log($scope.formInput);
-            $scope.formInput = {};
-            alert('Must send form data...');
+
+            $http.post('app/mailing/sendMail.php', $scope.formInput).then(function (r) {
+                $scope.formMessageType = true;
+                $scope.formMessagetext = r.data.message;
+                $scope.showFormMessage = true;
+                if (!r.data.error) {
+                    $scope.formInput = {};
+                }
+            });
         } else {
             showMessage_f();
         }
