@@ -50,7 +50,7 @@
                                         <input type="radio" ng-model="booking.time" value="2"> {{booking.activity.hora2}}
                                     </label>
                                     <label class="radio-inline">
-                                        <input type="radio" ng-model="booking.time" value="4"> {{booking.activity.hora3}}
+                                        <input type="radio" ng-model="booking.time" value="3"> {{booking.activity.hora3}}
                                     </label>
 
                                 </div>
@@ -225,7 +225,75 @@
                             </div>
                             <div role="tabpanel" class="tab-pane" id="checkout">
                                 <div ng-show="!bookingTabs.extras">
-                                    <div id="paypal-button"></div>
+                                    <p class="bookingSectionSubtitle">PROMO</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Type your code here" ng-model="booking.promoCode" ng-change="verificarPromoCode(booking.promoCode)">
+                                    </div>
+                                    <p class="bookingSectionSubtitle">PAYMENT</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <div class="ticket-checkout">
+                                                <div>
+                                                    <p>
+                                                        Tickets
+                                                        <span class="pull-right">{{ booking.totalTickets | currency: 'USD $' }}</span>
+                                                    </p>
+                                                </div>
+
+                                                <div>
+                                                    <p>
+                                                        Extras
+                                                        <span class="pull-right">
+                                                            {{ booking.totalExtras | currency: 'USD $' }}
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div ng-if="booking.promoCode">
+                                                    <p>
+                                                        Promo
+                                                        <span class="pull-right">
+                                                            -{{ booking.promo | currency: 'USD $' }}
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <hr>
+
+                                                <div>
+                                                    <p> Subtotal
+                                                        <span class="pull-right">
+                                                            {{ booking.subtotal | currency: 'USD $' }}
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div>
+                                                    <p>
+                                                        Taxes and Fees
+                                                        <span class="pull-right">
+                                                            {{ booking.taxes | currency: 'USD $' }}
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="lead">
+                                                        Total
+                                                        <span class="pull-right">
+                                                            {{ booking.total | currency: 'USD $' }}
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <div>
+                                                <div id="paypal-button"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -233,21 +301,30 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <h1>
-                        <u>BOOK</u>ING
+                    <h1 id="bookineHeader">
+                        <span>BOOK</span>ING
                     </h1>
-
+                    <!-- 
                     <pre>
                         {{booking | json}}
-                    </pre>
+                    </pre> -->
+
+                    <div class="pre-ticket">
+                        <h4 ng-bind="booking.activity.nombre"></h4>
+                        <p ng-bind="booking.date"></p>
+                        <p ng-bind="booking.hour"></p>
+                        <p ng-if="booking.adult > 0"> {{booking.adult}} x Adult </p>
+                        <p ng-if="booking.child > 0"> {{booking.child}} x Child </p>
+                        <p ng-if="booking.infant > 0"> {{booking.infant}} x Infant </p>
+                        <p ng-if="booking.Extras.wetsuit > 0"> {{booking.Extras.wetsuit}} x Wetsuit </p>
+                        <p ng-if="booking.Extras.mask > 0"> {{booking.Extras.mask}} x Mask </p>
+                        <hr>
+                        <h4> {{booking.Info.nombre}} {{booking.Info.apellido}} </h4>
+                        <p> {{booking.Info.correo}} </p>
+                        <p> {{booking.Info.telefono}} </p>
+                    </div>
                 </div>
             </div>
-
-            <!--  Content goes here   -->
-
-            <pre>
-                {{bookingData | json}}
-            </pre>
 
         </div>
     </section>

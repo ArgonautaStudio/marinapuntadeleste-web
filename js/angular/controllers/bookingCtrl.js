@@ -8,7 +8,10 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
         Extras: {
             wetsuit: 0,
             mask: 0
-        }
+        },
+        promo: 0,
+        taxes: 0,
+        total: 0
     };
     $scope.availableTime = false;
     $scope.bookingTabs = {
@@ -32,6 +35,11 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
 
     };
 
+    function calcularTotal() {
+        $scope.booking.subtotal = $scope.booking.totalTickets + $scope.booking.totalExtras - $scope.booking.promo;
+        $scope.booking.total = $scope.booking.subtotal + $scope.booking.taxes;
+    };
+
     $scope.selectTimes = function (item) {
         $scope.availableTime = true;
     };
@@ -51,6 +59,17 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
         });
     };
 
+    $scope.verificarPromoCode = function (promoCode) {
+        $http.post('app/Marina_PDE_DB/checkPromoCode.php', promoCode).then(function (r) {
+            $scope.booking.promo = r.data.promo;
+            calcularTotal();
+            if (r.data.error) {
+                console.error(r.data.message);
+            }
+
+        });
+    };
+
     $scope.checkTickets = function () {
         var totalAdulto = $scope.booking.adult * parseFloat($scope.bookingData.precios.precioAdulto);
         var totalNino = $scope.booking.child * parseFloat($scope.bookingData.precios.precioNino);
@@ -63,8 +82,8 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
         var totalExtra2 = $scope.booking.Extras.mask * parseFloat($scope.bookingData.extras.extra2);
         $scope.booking.totalExtras = totalExtra1 + totalExtra2;
 
-        $scope.booking.totalCheckout = $scope.booking.totalTickets + $scope.booking.totalExtras;
         $scope.bookingTabs.extras = false;
+        calcularTotal();
     };
 
     //Watch for changes on Booking var
@@ -116,6 +135,19 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
     $scope.$watch('booking', function (booking) {
         bookingStatus();
     }, true);
+    $scope.$watch('booking.time', function (res) {
+        switch (res) {
+            case '1':
+                $scope.booking.hour = $scope.booking.activity.hora1;
+                break;
+            case '2':
+                $scope.booking.hour = $scope.booking.activity.hora2;
+                break;
+            case '3':
+                $scope.booking.hour = $scope.booking.activity.hora3;
+                break;
+        };
+    });
 
     //Jquery and JS
     $('#datepickerBooking').datepicker({
@@ -126,10 +158,10 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
         funding: {
             allowed: [paypal.FUNDING.CARD]
         },
-        env: 'sandbox',
+        env: 'production',
         client: {
             sandbox: 'AYDB0oHxL_sQEDiX6MzuT1D0G6HISqecF-N-Z4NmTLJlrx7YAd8QuGF9EG7UhjK62yn6-6h87tfG1Yvu',
-            production: 'AYDB0oHxL_sQEDiX6MzuT1D0G6HISqecF-N-Z4NmTLJlrx7YAd8QuGF9EG7UhjK62yn6-6h87tfG1Yvu'
+            production: 'AWfPFDDy47qYE-E-WAeyAEOrhTo9fpJNeBozDanwHo_aTUvrqJ710iYWITmm-Y80u9-TBNApIXuBauPp'
         },
         commit: true,
         payment: function (data, actions) {
@@ -137,7 +169,7 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
                 payment: {
                     transactions: [
                         {
-                            amount: { total: $scope.booking.totalCheckout, currency: 'USD' }
+                            amount: { total: $scope.booking.total, currency: 'USD' }
                         }
                     ]
                 }

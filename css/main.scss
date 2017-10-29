@@ -733,6 +733,16 @@ section#bookingSection{
         margin: 0 auto;
         background-color: rgba(255, 255, 255, .5);
         height: 100%;
+        h1#bookineHeader{
+            color: #00A9CF;
+            span{
+                color: #FFF;
+                text-decoration: underline;
+                text-decoration-color: #00A9CF;
+                font-weight: 700;
+                font-size: 1em;
+            }
+        }
         p.bookingSectionSubtitle{
             background-color: #FFFFFF;
             color: #404142;
@@ -792,7 +802,18 @@ section#bookingSection{
     }
 }
  
-
+div.pre-ticket{
+    background-color: #FFFFFF;
+    padding: 10px;
+    min-height: 100px;
+};
+div.ticket-checkout{
+    background-color: #007CA6;
+    padding: 10px;
+    min-height: 100px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
 button.btn-circle{
     border-radius: 100%;
 }
