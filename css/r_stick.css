@@ -75,27 +75,6 @@
     .mangrove-act-button{
         top: 52.7em; 
         width: 50%;
-    } 
-    .logo-dis{
-        width: 360px;
-    }
-    .title-dis{
-        font-size: 5em; 
-    }
-    .discount-info{
-        width: 100%; 
-        float:left; 
-    } 
-    .discount-button{
-        top:46.7em; 
-    } 
-    .promotion-stamp{
-        left:4vw; 
-        top:10vw;
-    } 
-    .promotion-text-container {
-        padding-top: 23em; 
-        padding-left: 0vw;
     }
 } 
 
@@ -123,21 +102,7 @@
         display: block; 
         padding-left: .2em; 
         padding-top: .4em;
-    }  
-    .discount-info{
-        width: 100%; 
-        float:left; 
     } 
-    .discount-button{
-        top:59.7em; 
-    } 
-    .promotion-stamp{
-        left:28vw;  
-    } 
-    .promotion-text-container {
-        padding-top: 20em; 
-        padding-left: 16vw;
-    }
     
 } 
 
@@ -153,23 +118,5 @@
     /*MANGROVE*/ 
     .cuadro-mangrove{
         width: 155%; 
-    } 
-    .discount-info{
-        width: 32%;
-    } 
-    .discount-button{
-        top:60.7em;
-    } 
-}  
-
-@media screen and (max-width: 1280px) and (min-width: 1025px ) {
-        .discount-button{
-        top:50.7em;
     }
-}
-
-@media screen and (max-width: 1441px) and (min-width: 1025px ) {
-    .discount-info{
-        width: 28%;
-    } 
 }
