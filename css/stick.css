@@ -6,7 +6,7 @@
 
 /*BEGIN PICK TOUR SECTION*/
 section[name="scuba-dive"]{
-    
+    height: 100%;
 }  
 .scuba-dive{ 
     position: relative;

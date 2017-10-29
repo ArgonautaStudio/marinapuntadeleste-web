@@ -10,7 +10,7 @@ div.container-fluid {
   margin: 0px; }
 
 .sidebar {
-  width: 17vw;
+  width: 14vw;
   z-index: 10;
   height: 100%;
   position: fixed;
@@ -46,7 +46,7 @@ div.container-fluid {
       font-size: 1.6em; }
   .sidebar div#sidebar-div-social {
     float: right;
-    width: 70%;
+    width: 100%;
     padding: 20px 0px 20px 0px;
     text-align: right; }
     .sidebar div#sidebar-div-social a {
@@ -56,7 +56,8 @@ div.container-fluid {
       transform: scale(1.2, 1.2); }
   .sidebar div#sidebar-div-recomended {
     float: right;
-    width: 70%;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
     text-align: right; }
     .sidebar div#sidebar-div-recomended a img:hover {
       text-decoration: none;
@@ -147,7 +148,7 @@ section#jungleTourSection {
           background-color: rgba(101, 165, 9, 0.7); }
           section#jungleTourSection div.jungleTour div#jungleTourRow div#colInfo div#fondoVerde div#jungleTourInformation {
             height: 100%;
-            padding-left: 18vw;
+            padding-left: 15vw;
             padding-right: 1vw;
             padding-top: 5%; }
             section#jungleTourSection div.jungleTour div#jungleTourRow div#colInfo div#fondoVerde div#jungleTourInformation h1 {
@@ -225,7 +226,7 @@ section#mangroveTourSection {
           background-color: rgba(101, 165, 9, 0.7); }
           section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo div#fondoVerde div#mangroveTourInformation {
             height: 100%;
-            padding-left: 18vw;
+            padding-left: 15vw;
             padding-right: 1vw;
             padding-top: 10%; }
             section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo div#fondoVerde div#mangroveTourInformation h1 {
@@ -294,7 +295,7 @@ section#contactSection {
   section#contactSection div.contact {
     height: 100%;
     padding-top: 5%;
-    padding-left: 18vw; }
+    padding-left: 15vw; }
     section#contactSection div.contact div#contactRow {
       padding: 0px;
       margin: 0px; }
@@ -529,7 +530,7 @@ nav.navbar {
 
 /*Booking section*/
 div#bookingSteps {
-  padding-left: 19vw;
+  padding-left: 16vw;
   padding-right: 2vw; }
 
 span.bookintTicketsNumber {

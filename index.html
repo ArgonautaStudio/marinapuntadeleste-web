@@ -17,10 +17,8 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/standars.css">
     <link rel="stylesheet" href="./css/main.css">
-
     <link rel="stylesheet" href="./css/stick.css">
     <link rel="stylesheet" href="./css/r_stick.css">
-
     <!-- <link rel="stylesheet" media="screen" href="./css/responsive.css"> -->
     <style>
         .mainContainer {
@@ -30,77 +28,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default visible-xs">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#!/home">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#!/activities">TOURS & ACTIVITIES</a>
-                    </li>
-                    <li>
-                        <a href="#!/booking">BOOKING</a>
-                    </li>
-                    <li>
-                        <a>DISCOUNTS</a>
-                    </li>
-                    <li>
-                        <a data-scroll='' href="#contactSection">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <div class="sidebar animated fadeInLeft hidden-xs">
-        <div class="sidebar-menu-header">
-            <div class="sidebarHeader">
-                <img src="./assets/images/MPE_Logo_Menu.png" id="sidebarLogo" alt="Marina Punta del Este">
-            </div>
-            <div id="sidebar-div-menu">
-                <a href="#!/home">HOME</a>
-                <a href="#!/activities">TOURS & ACTIVITIES</a>
-                <a href="#!/booking">BOOKING</a>
-                <a>DISCOUNTS</a>
-                <a data-scroll='' href="#contactSection">CONTACT</a>
-            </div>
-            <div id="sidebar-div-social">
-                <a href="">
-                    <img src="assets/images/Btn_Info.png" alt="Info">
-                </a>
-                <a href="">
-                    <img src="assets/images/Btn_Facebook.png" alt="Facebook">
-                </a>
-                <a href="">
-                    <img src="assets/images/Btn_Instagram.png" alt="Instagram">
-                </a>
-            </div>
-            <div id="sidebar-div-recomended">
-                <a href="">
-                    <img src="assets/images/Recomemended-on-TripAdvisor.png" alt="Recomended on TripAdvisor">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
+    <div ng-include="'./templates/shared/navigation.html'"></div>
     <section ng-view class="mainContainer">
     </section>
 
-    <footer>
-        <p class="normal-p">ARGONAUTA STUDIO 2017</p>
-    </footer>
+    <div ng-include="'./templates/shared/footer.html'"></div>
 
     <script src="js/jquery/jquery-3.2.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -117,4 +50,5 @@
     <script src="js/angular/controllers/bookingCtrl.js"></script>
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 </body>
+
 </html>

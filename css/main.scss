@@ -12,7 +12,7 @@ div.container-fluid {
 .sectionTitle{
     margin: 0px;
 }
-$sidebar-width: 17vw;
+$sidebar-width: 14vw;
 $white-color: #F4F4F4;
 $orange-color: #f96900;
 $green-color: #65A509;
@@ -70,7 +70,7 @@ $z-top: 10;
 
     div#sidebar-div-social{
         float: right;
-        width: 70%;
+        width: 100%;
         padding: 20px 0px 20px 0px;
         text-align: right;
         a{
@@ -85,7 +85,8 @@ $z-top: 10;
     
     div#sidebar-div-recomended{
         float: right;
-        width: 70%;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
         text-align: right;
         a img:hover{
             text-decoration: none;
