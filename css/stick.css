@@ -782,7 +782,7 @@ section[name="discount-body"]
 
 .discount-button{ 
     position: absolute; 
-    top: 55vw; 
+    bottom: 3vw; 
     right: 0em;
     width: 20em;
     height: 5em;
