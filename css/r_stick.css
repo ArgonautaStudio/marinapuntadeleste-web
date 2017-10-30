@@ -37,7 +37,8 @@
     .act-nav{
         padding-left: 0em;
     } 
-    .nav-jungle-titleGreen{
+    .nav-jungle-titleGreen{ 
+        font-family: 'Roboto Cn';
         display: block; 
         padding-left: .2em; 
         padding-top: .4em;

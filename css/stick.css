@@ -194,7 +194,7 @@ section[name="scuba-act-body"]{
 
 .act-title{
     color: white; 
-    padding-left: 14.1vw; 
+    padding-left: 15vw; 
     margin-bottom: .5em;
 } 
 .act-title-scuba{
@@ -204,7 +204,7 @@ section[name="scuba-act-body"]{
 } 
 
 .act-nav{ 
-    padding-left: 14.1vw;
+    padding-left: 15vw;
 } 
 
 .nav-noactive{
@@ -226,13 +226,15 @@ section[name="scuba-act-body"]{
     font-size: 2.8em; 
     margin-top: .3em; 
     margin-bottom: .3em; 
+    margin-left: 1em;
 } 
 
 .fa-clock-o{
     color: white; 
     font-size: 2.8em; 
     margin-top: .3em; 
-    margin-bottom: .3em;
+    margin-bottom: .3em; 
+    margin-left: 1em;
 } 
 
 .fa-hourglass-end {
@@ -240,6 +242,7 @@ section[name="scuba-act-body"]{
     font-size: 2.8em; 
     margin-top: .3em; 
     margin-bottom: .3em; 
+    margin-left: 1em;
 } 
 
 .icon-text{
@@ -314,7 +317,8 @@ section[name="scuba-act-body"]{
     margin-top: 2em; 
     font-size: 2em;
 } 
-.nav-first-title2{
+.nav-first-title2{ 
+    font-family: 'Roboto Cn';
     color: #BFBA13; 
     font-weight: 700;
 } 
@@ -469,12 +473,7 @@ section[name="mangrove-act-body"]{
     margin-top: 2em; 
     font-size: 2em;    
 }
-.nav-jungle-titleGreen 
-{
-    padding-left: 1.8em;
-    color: #BFBA13; 
-    font-weight: 700; 
-} 
+
 .icon-underText{
     font-weight: 100;
     font-size: .8em; 
@@ -607,6 +606,7 @@ section[name="jungle-act-body"]{
 }
 .nav-jungle-titleGreen 
 {
+    font-family: 'Roboto Cn';
     padding-left: 1.8em;
     color: #BFBA13; 
     font-weight: 700; 
