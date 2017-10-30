@@ -30,7 +30,7 @@ section[name="scuba-dive"]{
     transition: opacity .5s;
 }
 .scuba{
-    background-color: #65A509; 
+    background-color: rgba(101, 165, 9, .80); 
     bottom: -0.05em;
 }
 .two-body{
@@ -57,12 +57,12 @@ section[name="scuba-dive"]{
 }
 
 .mangrove{
-    background-color: #ED2A50; 
+    background-color: rgba(237, 42, 80, .80); 
     bottom: -0.05em;
 } 
 
 .jungle{
-    background-color: #F69000; 
+    background-color: rgba(246, 144, 0, .80); 
     bottom: -0.0em;
 } 
 
