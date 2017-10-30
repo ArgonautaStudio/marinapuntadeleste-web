@@ -285,6 +285,24 @@ section[name="scuba-act-body"]{
     margin-top: .3em; 
     margin-bottom: .3em;  
     margin-left: 1em;
+} 
+
+.icon-img{
+    margin-top: 2em; 
+    margin-bottom: .8em;  
+    margin-left: 3.5em; 
+} 
+
+.icon-img-snorkel{
+    margin-top: 2em; 
+    margin-bottom: .8em;  
+    margin-left: 2.5em; 
+} 
+
+.icon-img-compres{
+   margin-top: -2em; 
+    margin-bottom: .8em;  
+    margin-left: 2.5em;  
 }
 
 .fa-cutlery{
@@ -310,6 +328,14 @@ section[name="scuba-act-body"]{
     margin-bottom: .3em; 
     margin-left: 1em;  
 }  
+
+.fa-sticky-note-o{
+    color: white; 
+    font-size: 2.8em; 
+    margin-top: .3em; 
+    margin-bottom: .3em; 
+    margin-left: 1em;
+}
 /*First Time Divers*/
 .nav-first-title{
     color:white; 
