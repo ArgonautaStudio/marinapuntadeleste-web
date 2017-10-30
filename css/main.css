@@ -633,4 +633,27 @@ div.ticket-checkout {
 button.btn-circle {
   border-radius: 100%; }
 
+.book-now-button-animation span {
+  text-align: right;
+  color: white;
+  font-size: 1em;
+  padding-right: 1em;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s; }
+.book-now-button-animation span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s; }
+
+.book-now-button-animation:hover span {
+  padding-right: 25px; }
+
+.book-now-button-animation:hover span:after {
+  opacity: 1;
+  right: 0; }
+
 /*# sourceMappingURL=main.css.map */
