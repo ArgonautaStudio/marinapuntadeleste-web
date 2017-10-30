@@ -1,6 +1,6 @@
 var app = angular.module('bookingApp', ['ngRoute', 'ui.bootstrap']);
 
-app.controller('mainCtrl', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
+app.controller('mainCtrl', ['$scope', '$http', '$rootScope', '$location', function ($scope, $http, $rootScope, $location) {
 
     $scope.formInput = {};
     $scope.formMessageText = '';
@@ -29,5 +29,9 @@ app.controller('mainCtrl', ['$scope', '$http', '$rootScope', function ($scope, $
         } else {
             showMessage_f();
         }
+    };
+
+    $scope.gotoBooking = function () {
+        window.location.href = '#!/booking';
     };
 }]);

@@ -1,5 +1,4 @@
 app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', function ($scope, $http, $rootScope, $location) {
-    console.log('Booking controller');
     $scope.booking = {
         adult: 0,
         child: 0,
@@ -61,7 +60,7 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
 
     $scope.verificarPromoCode = function (promoCode) {
         $http.post('app/Marina_PDE_DB/checkPromoCode.php', promoCode).then(function (r) {
-            $scope.booking.promo = r.data.promo;
+            $scope.booking.promo = $scope.booking.subtotal * r.data.promo;
             calcularTotal();
             if (r.data.error) {
                 console.error(r.data.message);
@@ -75,6 +74,8 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
         var totalNino = $scope.booking.child * parseFloat($scope.bookingData.precios.precioNino);
         var totalInfante = $scope.booking.infant * parseFloat($scope.bookingData.precios.precioInfante);
         $scope.booking.totalTickets = totalAdulto + totalNino + totalInfante;
+        $scope.cantidadBoletos = $scope.booking.adult + $scope.booking.child + $scope.booking.infant;
+        $scope.booking.taxes = $scope.cantidadBoletos * 10;
     };
 
     $scope.checkExtras = function () {
@@ -177,7 +178,7 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
         },
         onAuthorize: function (data, actions) {
             return actions.payment.execute().then(function (payment) {
-                console.log(payment);
+                console.info(payment);
             });
         }
     }, '#paypal-button');
