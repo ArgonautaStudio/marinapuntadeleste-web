@@ -3,7 +3,18 @@
 *   Mail: rodrigo.medinacetz@gmail.com
 *   Date: Sep 20, 2016
 */
-
+/*1024 puto asco*/ 
+@media screen and (max-width: 1200px){
+    .sidebar div#sidebar-div-menu a{
+        font: 1.2em; 
+    } 
+    .sidebar div#sidebar-div-social{
+        width: 101%; 
+    } 
+    .sidebar div#sidebar-div-recomended{
+        width: 104%;
+    }
+}
 /*movil*/
 @media screen and (max-width: 450px){
     /*HOME*/
@@ -24,6 +35,12 @@
     } 
     section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colImage{
         height: 0%;
+    } 
+    div.container-fluid section.mobile-height{
+        height: 200%;
+    } 
+    section#contactSection div.contact{
+        padding: 10%;
     }
 }
 @media screen and (max-width: 600px) {
