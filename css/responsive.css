@@ -5,7 +5,27 @@
 */
 
 /*movil*/
-
+@media screen and (max-width: 450px){
+    /*HOME*/
+    section#descriptionSection div.description div#descriptionContent{
+        width: 100%;
+    } 
+    section#jungleTourSection div.jungleTour div#jungleTourRow div#colInfo div#fondoVerde div#jungleTourInformation {
+        padding: 10%; 
+    } 
+    a.moreInfoButton{
+        bottom: 24%; 
+    } 
+    section#jungleTourSection div.jungleTour div#jungleTourRow div#colImage{
+        height: 0%;
+    } 
+    section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo div#fondoVerde div#mangroveTourInformation{
+        padding:10%;
+    } 
+    section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colImage{
+        height: 0%;
+    }
+}
 @media screen and (max-width: 600px) {
     section[name="main-section"] {
         display: flex;

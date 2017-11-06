@@ -96,7 +96,15 @@ section[name="coming"]
     left: 43em; 
     color:white; 
     opacity: .5;
-} 
+}  
+.tour-soon{
+    position:absolute; 
+    bottom: 15vw; 
+    left: 25vw; 
+    width: 70%; 
+    height: auto; 
+    opacity: .6;
+}
 
 /*END PICK TOUR SECTION*/ 
 

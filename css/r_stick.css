@@ -14,10 +14,22 @@
     }
     
 }
-@media screen and (max-width: 450px)
-{   
+@media screen and (max-width: 450px){
+    /*HOME*/
+    div#descriptionContent{
+        width: 100%;
+    }
+    /*TOURS*/
+    .tour-soon{
+        position: absolute;
+        bottom: 144vw;
+        left: 1vw;
+        width: 99%;
+        height: auto;
+        opacity: 1.6;
+    }   
     .r-aux{
-        margin-top: 7em;
+        margin-top: 7.5em;
     }
     /*SCUBA*/  
     section[name="scuba-act-body"] {
@@ -34,9 +46,18 @@
         padding-left: 0em;
     }  
     .scuba-act-button{
-        top: 16.7em; 
+        top: 15.7em; 
         width: 50%;
+    }  
+    .nav-first-title2{
+        display: block;
     } 
+    .nav-experienced-title2{
+        display: block;
+    }
+    .nav-non-title2{
+        display: block;
+    }
     /*JUNGLE*/ 
     .cuadro-jungle{
         width: 200%; 
@@ -59,7 +80,7 @@
     }
     
     .jungle-act-button{
-        top: 16.7em; 
+        top: 15.7em; 
         width: 50%;
     } 
     
@@ -84,12 +105,21 @@
     }
     
     .mangrove-act-button{
-        top: 16.7em; 
+        top: 15.7em; 
         width: 50%;
-    }
+    } 
 } 
 
 @media screen and (max-width: 780px) and (min-width: 451px ){
+    /*TOURS*/
+    .tour-soon{
+        position: absolute;
+        bottom: 144vw;
+        left: 1vw;
+        width: 99%;
+        height: auto;
+        opacity: 1.6;
+    }
     /*SCUBA*/
     .cuadro-scuba{
         width: 200%; 
@@ -113,7 +143,8 @@
         display: block; 
         padding-left: .2em; 
         padding-top: .4em;
-    } 
+    }  
+
     
 } 
 
