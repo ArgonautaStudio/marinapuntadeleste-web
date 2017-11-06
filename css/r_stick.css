@@ -1,14 +1,29 @@
-@media screen and (max-widht: 990px) 
-{
-    .be{ 
-        top:4em;
-        left:27em;
+@media screen and (max-width: 375px) { 
+      .scuba-act-button{
+        top: 20.7em; 
+        width: 50%;
+    }  
+}
+@media screen and (max-width: 412px) { 
+    
+    .title-act{
+        font-size: 3em;
+    } 
+    .logo-act{
+        width: 274px;
     }
-} 
-
+    
+}
 @media screen and (max-width: 450px)
 {   
-    /*SCUBA*/ 
+    .r-aux{
+        margin-top: 7em;
+    }
+    /*SCUBA*/  
+    section[name="scuba-act-body"] {
+        height: 170%;
+    }
+    
     .cuadro-scuba{
         width: 200%; 
     }  
@@ -18,13 +33,8 @@
     .act-nav{
         padding-left: 0em;
     }  
-    
-    section[name="scuba-act-body"] {
-        height: 143%;
-    }
-    
     .scuba-act-button{
-        top: 52.7em; 
+        top: 16.7em; 
         width: 50%;
     } 
     /*JUNGLE*/ 
@@ -45,11 +55,11 @@
     }  
     
     section[name="jungle-act-body"] {
-        height: 130%;
+        height: 170%;
     }
     
     .jungle-act-button{
-        top: 52.7em; 
+        top: 16.7em; 
         width: 50%;
     } 
     
@@ -70,11 +80,11 @@
     }  
     
     section[name="mangrove-act-body"] {
-        height: 130%;
+        height: 170%;
     }
     
     .mangrove-act-button{
-        top: 52.7em; 
+        top: 16.7em; 
         width: 50%;
     }
 } 
