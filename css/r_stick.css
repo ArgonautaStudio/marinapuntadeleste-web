@@ -4,7 +4,7 @@
         width: 50%;
     }  
 }
-@media screen and (max-width: 412px) { 
+@media screen and (max-width: 425px) { 
     
     .title-act{
         font-size: 3em;
@@ -107,7 +107,33 @@
     .mangrove-act-button{
         top: 15.7em; 
         width: 50%;
+    }  
+    /*Discounts*/ 
+    .logo-dis{
+        width: 345px;  
     } 
+    .title-dis{
+        font-size: 4em; 
+    } 
+    .discount-info{
+        width: 100%; 
+        float: left;
+    } 
+    .promotion-stamp{
+        left: 11vw;
+        width: 19em;
+    } 
+    .promotion-text-container{ 
+        position: absolute; 
+        top:47vw;
+        padding: 10%; 
+    } 
+    .promotion-title{
+        padding: 0%; 
+    } 
+    .promotion-info{
+        padding: 0%;
+    }
 } 
 
 @media screen and (max-width: 780px) and (min-width: 451px ){

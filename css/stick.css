@@ -160,6 +160,7 @@ section[name="scuba-act-intro"]{
     bottom: .2em; 
     right: .3em; 
     color:white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
 } 
 .title2-act{ 
     
@@ -218,7 +219,8 @@ section[name="scuba-act-body"]{
 .act-title{
     color: white; 
     padding-left: 15vw; 
-    margin-bottom: .5em;
+    margin-bottom: .5em; 
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
 } 
 .act-title-scuba{
     color: #65A509; 
@@ -751,7 +753,8 @@ section[name="discount-intro"]{
     bottom: .2em; 
     right: .3em; 
     color:white; 
-    font-size: 6em;
+    font-size: 6em; 
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
 } 
 
 .title2-dis{
@@ -813,7 +816,8 @@ section[name="discount-body"]
     color: white; 
     padding-top: 1em; 
     padding-left: .5em; 
-    font-weight: 700;
+    font-weight: 700; 
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
 } 
 
 .promotion-title span{
