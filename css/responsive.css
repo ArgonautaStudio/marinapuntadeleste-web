@@ -14,9 +14,28 @@
     .sidebar div#sidebar-div-recomended{
         width: 104%;
     }
+} 
+/*landscape*/ 
+@media screen and (max-width: 750px) and (min-width:500px)
+{   
+    section#descriptionSection div.description div#descriptionContent div#descriptionHeader img{
+        width: 30%; 
+    } 
+    section#descriptionSection div.description div#descriptionContent div#descriptionBody img{
+        width: 30%;
+    }
+    h1{
+        font-size: 3em; 
+    } 
+    p{
+        font-size: 1em;
+    } 
+    section#contactSection{
+        height: 400%;
+    }
 }
-/*movil*/
-@media screen and (max-width: 450px){
+/*movil*/ 
+@media screen and (max-width: 450px){ 
     /*HOME*/
     section#descriptionSection div.description div#descriptionContent{
         width: 100%;
@@ -25,7 +44,7 @@
         padding: 10%; 
     } 
     a.moreInfoButton{
-        bottom: 24%; 
+        bottom: 13%; 
     } 
     section#jungleTourSection div.jungleTour div#jungleTourRow div#colImage{
         height: 0%;
@@ -37,7 +56,40 @@
         height: 0%;
     } 
     div.container-fluid section.mobile-height{
-        height: 200%;
+        height: 240%;
+    } 
+    section#contactSection div.contact{
+        padding: 10%;
+    }
+    p{
+        font-size: 1.2em;
+    } 
+    a.moreInfoButton{
+        bottom: 25%; 
+    } 
+}
+@media screen and (max-width: 1000px) and (min-width:450px){
+    /*HOME*/
+    section#descriptionSection div.description div#descriptionContent{
+        width: 100%;
+    } 
+    section#jungleTourSection div.jungleTour div#jungleTourRow div#colInfo div#fondoVerde div#jungleTourInformation {
+        padding: 10%; 
+    } 
+    a.moreInfoButton{
+        bottom: 13%; 
+    } 
+    section#jungleTourSection div.jungleTour div#jungleTourRow div#colImage{
+        height: 0%;
+    } 
+    section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colInfo div#fondoVerde div#mangroveTourInformation{
+        padding:10%;
+    } 
+    section#mangroveTourSection div.mangroveTour div#mangroveTourRow div#colImage{
+        height: 0%;
+    } 
+    div.container-fluid section.mobile-height{
+        height: 240%;
     } 
     section#contactSection div.contact{
         padding: 10%;
@@ -356,7 +408,7 @@
     }
 }  
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1000px){
     .sidebar{
         display: none!important;
     }
@@ -617,7 +669,7 @@
 }
 
 
-@media screen and (min-width:0px) and (max-width: 767px) {
+@media screen and (min-width:0px) and (max-width: 1000px) {
     section[name="main-section"] {
         margin-top: -52px;
     }

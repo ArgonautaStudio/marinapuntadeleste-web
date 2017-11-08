@@ -1,8 +1,30 @@
-@media screen and (max-width: 375px) { 
-      .scuba-act-button{
-        top: 20.7em; 
+@media screen and (max-width: 359px) { 
+    .scuba-act-button{
+        top: 22.7em; 
+        width: 50%;
+    } 
+    .jungle-act-button{
+        top: 22.7em; 
         width: 50%;
     }  
+    .mangrove-act-button{
+        top: 22.7em; 
+        width: 50%;
+    } 
+}
+@media screen and (max-width: 375px) and (min-width:360px) { 
+    .scuba-act-button{
+        top: 19.7em; 
+        width: 50%;
+    }  
+    .jungle-act-button{
+        top: 19.7em; 
+        width: 50%;
+    } 
+    .mangrove-act-button{
+        top: 19.7em; 
+        width: 50%;
+    } 
 }
 @media screen and (max-width: 425px) { 
     
@@ -13,8 +35,18 @@
         width: 274px;
     }
     
+} 
+@media screen and (max-width: 450px) and (min-width:375px){
+    .scuba-act-button{
+        top: 15.7em; 
+        width: 50%;
+    } 
+        .mangrove-act-button{
+        top: 15.7em; 
+        width: 50%;
+    } 
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 1000px){
     /*HOME*/
     div#descriptionContent{
         width: 100%;
@@ -33,7 +65,7 @@
     }
     /*SCUBA*/  
     section[name="scuba-act-body"] {
-        height: 170%;
+        height: 200%;
     }
     
     .cuadro-scuba{
@@ -45,10 +77,7 @@
     .act-nav{
         padding-left: 0em;
     }  
-    .scuba-act-button{
-        top: 15.7em; 
-        width: 50%;
-    }  
+  
     .nav-first-title2{
         display: block;
     } 
@@ -76,13 +105,8 @@
     }  
     
     section[name="jungle-act-body"] {
-        height: 170%;
+        height: 200%;
     }
-    
-    .jungle-act-button{
-        top: 15.7em; 
-        width: 50%;
-    } 
     
     /*MANGROVE*/ 
     .cuadro-mangrove{
@@ -101,13 +125,8 @@
     }  
     
     section[name="mangrove-act-body"] {
-        height: 170%;
-    }
-    
-    .mangrove-act-button{
-        top: 15.7em; 
-        width: 50%;
-    }  
+        height: 200%;
+    } 
     /*Discounts*/ 
     .logo-dis{
         width: 345px;  
@@ -149,19 +168,29 @@
     /*SCUBA*/
     .cuadro-scuba{
         width: 200%; 
+    }  
+    section[name="scuba-act-body"] {
+        height: 350%;
     } 
     .scuba-act-button{
-        top: 62.7em; 
-        width: 30%;
-    } 
-    section[name="scuba-act-body"] {
-        height: 143%;
+        top: 10em; 
+        width: 50%;
     }
     /*JUNGLE*/
+    section[name="jungle-act-body"] {
+        height: 350%;
+    }
     .cuadro-jungle{
         width: 200%; 
-    } 
+    }
+    .jungle-act-button{
+        top: 10em; 
+        width: 50%;
+    }
     /*MANGROVE*/ 
+    section[name="mangrove-act-body"] {
+        height: 350%;
+    } 
     .cuadro-mangrove{
         width: 200%; 
     } 
@@ -169,7 +198,11 @@
         display: block; 
         padding-left: .2em; 
         padding-top: .4em;
-    }  
+    }   
+    .mangrove-act-button{
+        top: 10em; 
+        width: 50%;
+    } 
 
     
 } 
