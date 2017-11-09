@@ -3,7 +3,8 @@
 *   Mail: rodrigo.medinacetz@gmail.com
 *   Date: Sep 20, 2016
 */
-/*1024 puto asco*/ 
+/*1024 puto asco*/  
+
 @media screen and (max-width: 1200px){
     .sidebar div#sidebar-div-menu a{
         font: 1.2em; 
@@ -14,7 +15,13 @@
     .sidebar div#sidebar-div-recomended{
         width: 104%;
     }
-} 
+}  
+/*peque movil*/ 
+@media screen and (max-width: 359px) {
+    h1{
+        font-size: 3em;
+    }
+}
 /*movil*/ 
 @media screen and (max-width: 450px){  
     /*HOME*/
@@ -52,7 +59,7 @@
         height: 0%;
     } 
     div.container-fluid section.mobile-height{
-        height: 240%;
+        height: 260%;
     } 
     section#contactSection div.contact{
         padding: 10%;
@@ -423,13 +430,13 @@
     }
 }  
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
     .sidebar{
         display: none!important;
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 1000px) {
+@media screen and (min-width: 720px) and (max-width: 1100px) {
    
     img.logoMain {
         margin: 30px 30px;
@@ -684,7 +691,7 @@
 }
 
 
-@media screen and (min-width:0px) and (max-width: 1024px) {
+@media screen and (min-width:0px) and (max-width: 1100px) {
     section[name="main-section"] {
         margin-top: -52px;
     }

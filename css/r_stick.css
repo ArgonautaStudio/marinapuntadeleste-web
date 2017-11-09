@@ -1,18 +1,18 @@
 @media screen and (max-width: 359px) { 
     .scuba-act-button{
-        top: 22.7em; 
+        top: 15.7em; 
         width: 50%;
     } 
     .jungle-act-button{
-        top: 22.7em; 
+        top: 15.7em; 
         width: 50%;
     }  
     .mangrove-act-button{
-        top: 22.7em; 
+        top: 15.7em; 
         width: 50%;
     } 
 }
-@media screen and (max-width: 375px) and (min-width:360px) { 
+@media screen and (max-width: 374px) and (min-width:360px) { 
     .scuba-act-button{
         top: 19.7em; 
         width: 50%;
@@ -25,8 +25,8 @@
         top: 19.7em; 
         width: 50%;
     } 
-}
-@media screen and (max-width: 425px) {  
+} 
+@media screen and (max-width: 425px) and (min-width:0px) {  
     /*SCUBA TOUR*/
     .scubaCarousel-1{
         background-image: url('../assets/images/tours/Movil_ScubaDive_Top_01.jpg'); 
@@ -62,7 +62,9 @@
     }
     .jungleCarousel-3{
         background-image: url('../assets/images/tours/Movil_JungleTour_Top_03.jpg'); 
-    }
+    } 
+}
+@media screen and (max-width: 425px) {  
     .title-act{
         font-size: 3em;
     } 
@@ -73,27 +75,27 @@
 } 
 @media screen and (max-width: 450px) and (min-width:375px){
     .scuba-act-button{
-        top: 15.7em; 
+        top: 15em; 
         width: 50%;
     } 
-        .mangrove-act-button{
-        top: 15.7em; 
+    .mangrove-act-button{
+        top: 15em; 
+        width: 50%;
+    }  
+    .jungle-act-button{
+        top: 15em; 
         width: 50%;
     } 
 }
 @media screen and (max-width: 1000px){
-    /*HOME*/
-    div#descriptionContent{
-        width: 100%;
-    }
     /*TOURS*/
     .tour-soon{
-        position: absolute;
         bottom: 144vw;
-        left: 1vw;
-        width: 99%;
         height: auto;
+        left: 1vw;
         opacity: 1.6;
+        position: absolute;
+        width: 99%;
     }   
     .r-aux{
         margin-top: 7.5em;
@@ -110,7 +112,7 @@
         padding-left: .2em;
     } 
     .act-nav{
-        padding-left: 0em;
+        padding-left: 0;
     }  
   
     .nav-first-title2{
@@ -121,7 +123,7 @@
     }
     .nav-non-title2{
         display: block;
-    }
+    } 
     /*JUNGLE*/ 
     .cuadro-jungle{
         width: 200%; 
@@ -130,15 +132,14 @@
         padding-left: .2em;
     } 
     .act-nav{
-        padding-left: 0em;
+        padding-left: 0;
     } 
     .nav-jungle-titleGreen{ 
-        font-family: 'Roboto Cn';
         display: block; 
+        font-family: 'Roboto Cn';
         padding-left: .2em; 
         padding-top: .4em;
     }  
-    
     section[name="jungle-act-body"] {
         height: 200%;
     }
@@ -151,14 +152,13 @@
         padding-left: .2em;
     } 
     .act-nav{
-        padding-left: 0em;
+        padding-left: 0;
     } 
     .nav-mangrove-titleGreen{
         display: block; 
         padding-left: .2em; 
         padding-top: .4em;
     }  
-    
     section[name="mangrove-act-body"] {
         height: 200%;
     } 
@@ -170,35 +170,47 @@
         font-size: 4em; 
     } 
     .discount-info{
-        width: 100%; 
         float: left;
+        width: 100%; 
     } 
     .promotion-stamp{
         left: 11vw;
         width: 19em;
     } 
     .promotion-text-container{ 
+        padding: 10%; 
         position: absolute; 
         top:47vw;
-        padding: 10%; 
     } 
     .promotion-title{
-        padding: 0%; 
+        padding: 0; 
     } 
     .promotion-info{
-        padding: 0%;
+        padding: 0;
     }
-} 
+}  
 
-@media screen and (max-width: 780px) and (min-width: 451px ){
+@media screen and (max-width: 1000px) and (min-width:768px)
+{
+    .scuba-act-button{
+        top: 12em; 
+    } 
+    .mangrove-act-button{
+        top: 12em; 
+    } 
+    .jungle-act-button{
+        top: 12em; 
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 451px ){
     /*TOURS*/
-    .tour-soon{
-        position: absolute;
+    .tour-soon{ 
         bottom: 144vw;
-        left: 1vw;
-        width: 99%;
         height: auto;
+        left: 1vw;
         opacity: 1.6;
+        position: absolute;
+        width: 99%;    
     }
     /*SCUBA*/
     .cuadro-scuba{
@@ -208,8 +220,7 @@
         height: 350%;
     } 
     .scuba-act-button{
-        top: 10em; 
-        width: 50%;
+        top: 9em; 
     }
     /*JUNGLE*/
     section[name="jungle-act-body"] {
@@ -219,8 +230,7 @@
         width: 200%; 
     }
     .jungle-act-button{
-        top: 10em; 
-        width: 50%;
+        top: 9em; 
     }
     /*MANGROVE*/ 
     section[name="mangrove-act-body"] {
@@ -235,8 +245,7 @@
         padding-top: .4em;
     }   
     .mangrove-act-button{
-        top: 10em; 
-        width: 50%;
+        top: 9em; 
     } 
 
     
