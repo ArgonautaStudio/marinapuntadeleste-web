@@ -113,7 +113,11 @@ section[name="coming"]
 section[name="scuba-act-intro"]{ 
     position: relative;
     height: 100%;
-    background-image: url('../assets/images/tours/ScubaDive_Top_03.jpg');
+}   
+
+.scubaCarousel-1{
+    background-image: url('../assets/images/tours/ScubaDive_Top_01.jpg'); 
+    height: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-position: top; 
@@ -124,7 +128,63 @@ section[name="scuba-act-intro"]{
     display: flex;
     justify-content: center;
     align-items: center;
-}  
+} 
+.scubaCarousel-2{
+    background-image: url('../assets/images/tours/ScubaDive_Top_02.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scubaCarousel-3{
+    background-image: url('../assets/images/tours/ScubaDive_Top_03.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scubaCarousel-4{
+    background-image: url('../assets/images/tours/ScubaDive_Top_04.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scubaCarousel-5{
+    background-image: url('../assets/images/tours/ScubaDive_Top_05.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .carousel-inner {
     height: 100%;
 }
@@ -461,7 +521,10 @@ section[name="scuba-act-body"]{
 section[name="mangrove-act-intro"]{ 
     position: relative;
     height: 100%;
-    background-image: url('../assets/images/tours/MPE_MT_Top_03.jpg');
+} 
+.mangroveCarousel-1{
+    background-image: url('../assets/images/tours/MPE_MT_Top_01.jpg'); 
+    height: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-position: top; 
@@ -472,8 +535,35 @@ section[name="mangrove-act-intro"]{
     display: flex;
     justify-content: center;
     align-items: center;
-} 
- 
+}
+.mangroveCarousel-2{
+    background-image: url('../assets/images/tours/MPE_MT_Top_02.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mangroveCarousel-3{
+    background-image: url('../assets/images/tours/MPE_MT_Top_03.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .title3-act{ 
     color: #ED2A50; 
     font-weight: 700; 
@@ -591,7 +681,11 @@ section[name="mangrove-act-body"]{
 section[name="jungle-act-intro"]{ 
     position: relative;
     height: 100%;
-    background-image: url('../assets/images/tours/JungleTour_Top_01.jpg');
+}  
+
+.jungleCarousel-1{
+    background-image: url('../assets/images/tours/JungleTour_Top_01.jpg'); 
+    height: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-position: top; 
@@ -603,9 +697,36 @@ section[name="jungle-act-intro"]{
     justify-content: center;
     align-items: center;
 } 
+.jungleCarousel-2{
+    background-image: url('../assets/images/tours/JungleTour_Top_02.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.jungleCarousel-3{
+    background-image: url('../assets/images/tours/JungleTour_Top_03.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
  
 .title4-act{ 
-    
     color: #F96900; 
     font-weight: 700; 
     font-size: 1em;

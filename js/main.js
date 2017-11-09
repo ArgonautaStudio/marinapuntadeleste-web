@@ -1,8 +1,8 @@
 $(document).ready(function () {
-
-    function responsiveImages() {
+    /*
+   function responsiveImages() {
         var DeviceWidth = window.innerWidth;
-        if (DeviceWidth <= 414) {
+        if (DeviceWidth <= 425) {
             $('#carousel1').attr('src', 'assets/images/Movil_Img_Seccion1_01.jpg');
             $('#carousel2').attr('src', 'assets/images/Movil_Img_Seccion1_02.jpg');
             $('#carousel3').attr('src', 'assets/images/Movil_Img_Seccion1_03.jpg');
@@ -17,12 +17,13 @@ $(document).ready(function () {
         }
     };
 
-
     $(window).resize(function () {
         responsiveImages();
-    });
+    }); 
+    
+    responsiveImages();*/
 
-    responsiveImages();
+    
 
     $('.carousel').carousel({
         interval: 3000

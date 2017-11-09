@@ -1,5 +1,75 @@
 @import url("./fonts/stylesheet.css");
-@import url("./fonts/messyAmanda/stylesheet.css");
+@import url("./fonts/messyAmanda/stylesheet.css"); 
+.prueba1{
+    background-image: url('../assets/images/Seccion1_06.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.prueba2{
+    background-image: url('../assets/images/Seccion1_01.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.prueba3{
+    background-image: url('../assets/images/Seccion1_02.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.prueba4{
+    background-image: url('../assets/images/Seccion1_03.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.prueba5{
+    background-image: url('../assets/images/Seccion1_04.jpg'); 
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 div.container-fluid {
   height: 100%; }
   div.container-fluid section.fullHeightSection {

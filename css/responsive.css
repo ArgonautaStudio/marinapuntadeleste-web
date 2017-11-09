@@ -15,28 +15,24 @@
         width: 104%;
     }
 } 
-/*landscape*/ 
-@media screen and (max-width: 750px) and (min-width:500px)
-{   
-    section#descriptionSection div.description div#descriptionContent div#descriptionHeader img{
-        width: 30%; 
-    } 
-    section#descriptionSection div.description div#descriptionContent div#descriptionBody img{
-        width: 30%;
-    }
-    h1{
-        font-size: 3em; 
-    } 
-    p{
-        font-size: 1em;
-    } 
-    section#contactSection{
-        height: 400%;
-    }
-}
 /*movil*/ 
-@media screen and (max-width: 450px){ 
+@media screen and (max-width: 450px){  
     /*HOME*/
+    .prueba1{
+        background-image: url('../assets/images/Movil_Img_Seccion1_01.jpg');
+    } 
+    .prueba2{
+        background-image: url('../assets/images/Movil_Img_Seccion1_02.jpg');
+    } 
+    .prueba3{
+        background-image: url('../assets/images/Movil_Img_Seccion1_03.jpg');
+    } 
+    .prueba4{
+        background-image: url('../assets/images/Movil_Img_Seccion1_04.jpg');
+    } 
+    .prueba5{
+        background-image: url('../assets/images/Movil_Img_Seccion1_05.jpg');
+    }
     section#descriptionSection div.description div#descriptionContent{
         width: 100%;
     } 
@@ -67,6 +63,25 @@
     a.moreInfoButton{
         bottom: 25%; 
     } 
+} 
+/*landscape*/ 
+@media screen and (max-width: 750px) and (min-width:500px)
+{   
+    section#descriptionSection div.description div#descriptionContent div#descriptionHeader img{
+        width: 30%; 
+    } 
+    section#descriptionSection div.description div#descriptionContent div#descriptionBody img{
+        width: 30%;
+    }
+    h1{
+        font-size: 2em; 
+    } 
+    p{
+        font-size: .9em;
+    } 
+    section#contactSection{
+        height: 400%;
+    }
 }
 @media screen and (max-width: 1000px) and (min-width:450px){
     /*HOME*/
@@ -669,7 +684,7 @@
 }
 
 
-@media screen and (min-width:0px) and (max-width: 1000px) {
+@media screen and (min-width:0px) and (max-width: 1024px) {
     section[name="main-section"] {
         margin-top: -52px;
     }
