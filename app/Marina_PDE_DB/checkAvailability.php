@@ -13,7 +13,7 @@ if (!$post) {
             throw new Exception('Missing arguments');
         }
         $CHECK_AVAILABILITY_QUERY = $db->prepare('
-        SELECT SUM(ft.turistas) as ocupado, t.capacidad, t.precioAdultoUS, t.precioNinoUS, 0 as precioInfanteUs
+        SELECT SUM(ft.turistas) as ocupado, t.capacidad, t.precioAdultoUS, t.precioNinoUS, t.precioWreckAndReef, t.precioNonDivers
         FROM fechatour ft
         INNER JOIN tour t
         ON ft.idTour = t.idtour
@@ -26,7 +26,9 @@ if (!$post) {
         $CHECK_AVAILABILITY_QUERY->bindColumn('capacidad', $_capacidad);
         $CHECK_AVAILABILITY_QUERY->bindColumn('precioAdultoUS', $_adultoPrecio);
         $CHECK_AVAILABILITY_QUERY->bindColumn('precioNinoUS', $_ninoPrecio);
-        $CHECK_AVAILABILITY_QUERY->bindColumn('precioInfanteUs', $_infantePrecio);
+        $CHECK_AVAILABILITY_QUERY->bindColumn('precioWreckAndReef', $_infantePrecio); 
+        $CHECK_AVAILABILITY_QUERY->bindColumn('precioNonDivers', $_infanteNonDivers);
+        
         if ($CHECK_AVAILABILITY_QUERY->rowCount() == 1) {
             $CHECK_AVAILABILITY_QUERY->fetch(PDO::FETCH_BOUND);
             $_tickets = $_capacidad - $_ocupado;
@@ -39,7 +41,9 @@ if (!$post) {
                     'precios'=>[
                         'precioAdulto'=>$_adultoPrecio,
                         'precioNino'=>$_ninoPrecio,
-                        'precioInfante'=>$_infantePrecio
+                        'precioInfante'=>$_infantePrecio, 
+                        'precioNonDivers'=>$_infanteNonDivers
+                        
                     ]
                     ]);
             } else {
@@ -51,7 +55,8 @@ if (!$post) {
                     'precios'=>[
                         'precioAdulto'=> 0,
                         'precioNino'=> 0,
-                        'precioInfante'=> 0
+                        'precioInfante'=> 0, 
+                        'precioNonDivers'=>0
                     ]
                     ]);
             }

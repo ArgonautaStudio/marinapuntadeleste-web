@@ -1,8 +1,38 @@
-app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', function ($scope, $http, $rootScope, $location) {
+app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', function ($scope, $http, $rootScope, $location, $timeout) {
+    function siguiente() {
+    $('.nav-tabs > .active').next('li').find('a').trigger('click');  
+        
+    };   
+    function changeNames() {  
+            $('#firstTickets').hide(); 
+            $('#reefTickets').hide(); 
+            $('#WreckTickets').hide(); 
+            $('#nonDiver').hide();  
+            $('#adultTickets').hide();
+            $('#childTickets').hide();
+            $('#infantTickets').hide();  
+        if($scope.booking.activity.nombre == "Scuba Dive" ) { 
+            $('#firstTickets').show(); 
+            $('#reefTickets').show(); 
+            $('#WreckTickets').show(); 
+            $('#nonDiver').show();  
+            if($scope.booking.hour == $scope.booking.activity.hora3 ) {
+                $('#reefTickets').hide(); 
+                $('#WreckTickets').hide();
+            }
+        } 
+        else { 
+            $('#adultTickets').show();
+            $('#childTickets').show();
+            $('#infantTickets').show(); 
+        }  
+    };  
+     
     $scope.booking = {
         adult: 0,
         child: 0,
         infant: 0,
+        nonDiver:0,
         Info: {},
         Extras: {
             wetsuit: 0,
@@ -40,13 +70,17 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
     };
 
     $scope.selectTimes = function (item) {
-        $scope.availableTime = true;
+        $scope.availableTime = true; 
     };
 
-    $scope.checkAvailability = function () {
+    $scope.checkAvailability = function () { 
         $http.post('app/Marina_PDE_DB/checkAvailability.php', $scope.booking).then(function (r) {
             $scope.bookingData = r.data;
-        });
+        }); 
+        siguiente(); 
+        setTimeout(function () { 
+            changeNames();
+        }, 800);
     };
 
     $scope.getExtras = function () {
@@ -55,7 +89,8 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
             if (r.data.error) {
                 console.error(r.data.message);
             }
-        });
+        }); 
+        siguiente();
     };
 
     $scope.verificarPromoCode = function (promoCode) {
@@ -72,10 +107,17 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
     $scope.checkTickets = function () {
         var totalAdulto = $scope.booking.adult * parseFloat($scope.bookingData.precios.precioAdulto);
         var totalNino = $scope.booking.child * parseFloat($scope.bookingData.precios.precioNino);
-        var totalInfante = $scope.booking.infant * parseFloat($scope.bookingData.precios.precioInfante);
-        $scope.booking.totalTickets = totalAdulto + totalNino + totalInfante;
-        $scope.cantidadBoletos = $scope.booking.adult + $scope.booking.child + $scope.booking.infant;
-        $scope.booking.taxes = $scope.cantidadBoletos * 10;
+        var totalInfante = $scope.booking.infant * parseFloat($scope.bookingData.precios.precioInfante); 
+        var totalNonDiver = $scope.booking.nonDiver * parseFloat($scope.bookingData.precios.precioNonDivers);  
+        $scope.booking.totalTickets = totalAdulto + totalNino + totalInfante + totalNonDiver;
+        $scope.cantidadBoletos = $scope.booking.adult + $scope.booking.child + $scope.booking.infant + $scope.booking.nonDiver; 
+        if($scope.booking.activity.nombre == "Scuba Dive"){
+          $scope.booking.taxes = ($scope.booking.adult + $scope.booking.child + $scope.booking.infant + $scope.booking.nonDiver ) * 10;  
+        } else {
+            $scope.booking.taxes = ($scope.booking.adult + $scope.booking.child + $scope.booking.infant + $scope.booking.nonDiver ) * 10;
+        }
+        
+        siguiente();
     };
 
     $scope.checkExtras = function () {
@@ -84,7 +126,8 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
         $scope.booking.totalExtras = totalExtra1 + totalExtra2;
 
         $scope.bookingTabs.extras = false;
-        calcularTotal();
+        calcularTotal(); 
+        siguiente();
     };
 
     //Watch for changes on Booking var
@@ -107,7 +150,7 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
 
     function verificarTerminos() {
         if ($scope.booking.aceptDockFee && $scope.booking.aceptTerms) {
-            return true;
+            return true; 
         } else {
             return false;
         }
@@ -145,16 +188,18 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
                 $scope.booking.hour = $scope.booking.activity.hora2;
                 break;
             case '3':
-                $scope.booking.hour = $scope.booking.activity.hora3;
+                $scope.booking.hour = $scope.booking.activity.hora3; 
                 break;
         };
-    });
-
+    }); 
+   
     //Jquery and JS
-    $('#datepickerBooking').datepicker({
-        autoclose: true
-    });
-
+    $('#datepickerBooking').datepicker({ 
+        autoclose: true, 
+        startDate: '-0d',  
+        datesDisabled: ['12/25/2017','01/01/2018','12/25/2018','01/01/2019','12/25/2019','01/01/2020','12/25/2020']
+    });  
+    
     paypal.Button.render({
         funding: {
             allowed: [paypal.FUNDING.CARD]
@@ -186,6 +231,11 @@ app.controller('bookingCtrl', ['$scope', '$http', '$rootScope', '$location', fun
 
     if ($location.path() == '/booking') {
         // $scope.booking.schedule.disabled = false;
-        getResources();
-    }
-}]);
+        getResources() 
+    }  
+    
+    $('.continue').click(function(){
+  $('.nav-tabs > .active').next('li').find('a').trigger('click');
+});
+}]); 
+

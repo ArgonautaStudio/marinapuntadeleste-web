@@ -9,101 +9,110 @@ section[name="scuba-dive"]{
     height: 100%;
 }  
 .scuba-dive{ 
-    position: relative;
-    height: 100%;
-    background-image: url('./../assets/images/tours/B.jpg');
+    align-items: center; 
+    background: url('./../assets/images/tours/B.jpg');
     background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
-    background-size: cover;
     display: flex;
+    height: 100%;
     justify-content: center;
-    align-items: center;
+    position: relative;
 }
 .scuba-dive:hover {
-    opacity: .3;
     cursor: pointer; 
-    -webkit-transition: opacity .5s;
+    opacity: .3;
     transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
 }
-.scuba{
-    background-color: rgba(101, 165, 9, .80); 
+.scuba{  
+    background:green;
+    background: rgba(101, 165, 9, .80);
     bottom: -0.05em;
 }
 .two-body{
-    margin-left: 0px; 
-    margin-right: 0px; 
-    padding-left: 0px; 
-    padding-right: 0px;
+    margin-left: 0; 
+    margin-right: 0; 
+    padding-left: 0; 
+    padding-right: 0;
 } 
 .nepe:hover{
+    
+    cursor: pointer; 
     opacity: .5; 
-    cursor: pointer;  
-    -webkit-transition: opacity .5s;
     transition: opacity .5s;
+    -webkit-transition: opacity .5s; 
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
 }
 .image{
     position: relative; 
 }
 .title {
+    color: white;  
+    margin-bottom: 0;
     position: absolute; 
     text-align: right;
     width: 100%; 
-    color: white;  
-    margin-bottom: 0;
 }
 
-.mangrove{
-    background-color: rgba(237, 42, 80, .80); 
+.mangrove{ 
+    background: red;
+    background: rgba(237, 42, 80, .80); 
     bottom: -0.05em;
 } 
 
-.jungle{
-    background-color: rgba(246, 144, 0, .80); 
-    bottom: -0.0em;
+.jungle{ 
+    background: red;
+    background: rgba(246, 144, 0, .80); 
+    bottom: 0;
 } 
 
 .boat{
-    background-color: #58595B; 
-    bottom: -0.0em;
+    background: #58595B; 
+    bottom: 0;
 } 
 
 .aquabus{
-    background-color: #58595B;
+    background: #58595B;
     bottom: -0.06em;
 } 
 
 section[name="coming"]
 {
-    position: relative; 
     cursor:not-allowed;
+    position: relative; 
 } 
 
 .layer {
-    background-color: rgba(0, 0, 0, 0.4);
+    background: black;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%; 
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
 } 
-.be{
-    position: absolute;
-    top:1em;  
+.be{  
+    color:white;
     left: 43em; 
-    color:white; 
-    opacity: .5;
+    opacity: .5; 
+    position: absolute; 
+    top:1em;
 }  
-.tour-soon{
-    position:absolute; 
+.tour-soon{ 
     bottom: 15vw; 
-    left: 25vw; 
-    width: 70%; 
-    height: auto; 
+    height: auto;
+    left: 25vw;   
     opacity: .6;
+    position:absolute;
+    width: 70%;
 }
 
 /*END PICK TOUR SECTION*/ 
@@ -111,181 +120,180 @@ section[name="coming"]
 /*BEGIN SCUBA ACTIVITIE*/
     /*Begin Scuba Activitie*/ 
 section[name="scuba-act-intro"]{ 
-    position: relative;
     height: 100%;
+    position: relative;
 }   
 
 .scubaCarousel-1{
-    background-image: url('../assets/images/tours/ScubaDive_Top_01.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center; 
+    background: url('../assets/images/tours/ScubaDive_Top_01.jpg');
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
-    display: flex;
+    display: flex; 
+    height: 100%;
     justify-content: center;
-    align-items: center;
 } 
 .scubaCarousel-2{
-    background-image: url('../assets/images/tours/ScubaDive_Top_02.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center; 
+    background: url('../assets/images/tours/ScubaDive_Top_02.jpg');
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
-    display: flex;
+    display: flex; 
+    height: 100%;
     justify-content: center;
-    align-items: center;
 }
 .scubaCarousel-3{
-    background-image: url('../assets/images/tours/ScubaDive_Top_03.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center; 
+    background: url('../assets/images/tours/ScubaDive_Top_03.jpg');
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
-    display: flex;
+    display: flex; 
+    height: 100%;
     justify-content: center;
-    align-items: center;
 }
 .scubaCarousel-4{
-    background-image: url('../assets/images/tours/ScubaDive_Top_04.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center; 
+    background: url('../assets/images/tours/ScubaDive_Top_04.jpg');
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
-    display: flex;
+    display: flex; 
+    height: 100%;
     justify-content: center;
-    align-items: center;
 }
 .scubaCarousel-5{
-    background-image: url('../assets/images/tours/ScubaDive_Top_05.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center; 
+    background: url('../assets/images/tours/ScubaDive_Top_05.jpg');
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
-    display: flex;
+    display: flex; 
+    height: 100%;
     justify-content: center;
-    align-items: center;
 }
 .carousel-inner {
     height: 100%;
 }
 
 .carousel-inner .item {
-    overflow: hidden;
+    max-height: 100%; 
     max-width: 100%;
-    max-height: 100%;
+    overflow: hidden;
 }
 
 .carousel-inner .item img {
-    width: 100%;
-    min-height: 100%;
     max-height: none;
+    min-height: 100%;
+    width: 100%;
 }
 
-.triangulo{
-    position: absolute; 
-    bottom: .2em; 
-    right: 0em;
+.triangulo{ 
+    bottom: .2em;
+    position: absolute;
+    right: 0;
     
 } 
-.logo-act{
-    position: absolute; 
-    bottom: 6.5em; 
+.logo-act{ 
+    bottom: 6.5em;
+    height: auto;
+    position: absolute;
     right: .3em;
     width:  340px; 
-    height: auto;
 } 
 
-.title-act{
-    position: absolute; 
-    bottom: .2em; 
-    right: .3em; 
+.title-act{ 
+    bottom: .2em;
     color:white;
+    position: absolute;
+    right: .3em; 
     text-shadow: 2px 2px 2px rgba(0,0,0,.2);
 } 
 .title2-act{ 
-    
-    color: #65A509; 
-    font-weight: 700; 
+    color: #65A509;  
     font-size: 1em;
+    font-weight: 700;
 }
 
-section[name="scuba-act-intro"] .underline {
-    text-decoration: underline; 
-    text-decoration-color: #65A509; 
-    font-weight: 700; 
+section[name="scuba-act-intro"] .underline { 
     font-size: 1em;
+    font-weight: 700;
+    text-decoration: underline #65A509; 
 } 
     /*End Scuba Activitie INTRO*/
     
     /*Begin Scuba Activitie BODY*/
 
 section[name="scuba-act-body"]{ 
-    background-image: url('../assets/images/tours/ScubaDive_Content.jpg');
+    align-items: center;
+    background: url('../assets/images/tours/ScubaDive_Content.jpg');
     background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    background-position: top;
+    background-repeat: no-repeat;  
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100%; 
+    height: 100%;
+    justify-content: center;  
     position: relative;
 }  
 
 .scuba-act{
-    width: 100%;
     height: 100%; 
-    padding-left: 0px; 
-    padding-right: 0px;
+    padding-left: 0; 
+    padding-right: 0;
+    width: 100%;
 }
 
-.scuba-info{
-    width: 50%; 
+.scuba-info{ 
     height: 100%; 
+    width: 50%;
 }
 
 .cuadro-scuba 
-{
-    padding-top: px;
-    height: 100%;
-    width: 111%;
+{   
+    background: blue;
+    background: rgba(0,123,164, .80);
     float: left;
-    background-color: rgba(0,123,164, .80);
+    height: 100%;
+    padding-top: 0;
+    width: 111%;
 }  
 
 .act-title{
     color: white; 
-    padding-left: 15vw; 
     margin-bottom: .5em; 
+    padding-left: 15vw; 
     text-shadow: 2px 2px 2px rgba(0,0,0,.2);
 } 
 .act-title-scuba{
-    color: #65A509; 
-    font-weight: 700; 
+    color: #65A509;  
     font-size: 1em;
+    font-weight: 700;
 } 
 
 .act-nav{ 
@@ -293,11 +301,11 @@ section[name="scuba-act-body"]{
 } 
 
 .nav-noactive{
-    color: white; 
     border-top: 1px;
-    border-top: white; 
-    font-weight: 700; 
+    border-top: white;
+    color: white;   
     font-size: 1.08em;
+    font-weight: 700;
 }
 /*Description*/
 .nav-description-p{
@@ -309,128 +317,124 @@ section[name="scuba-act-body"]{
 .fa-calendar{
     color: white; 
     font-size: 2.8em; 
-    margin-top: .3em; 
     margin-bottom: .3em; 
     margin-left: 1em;
+    margin-top: .3em; 
 } 
 
 .fa-clock-o{
     color: white; 
     font-size: 2.8em; 
-    margin-top: .3em; 
     margin-bottom: .3em; 
     margin-left: 1em;
+    margin-top: .3em; 
 } 
 
 .fa-hourglass-end {
     color: white; 
     font-size: 2.8em; 
-    margin-top: .3em; 
     margin-bottom: .3em; 
     margin-left: 1em;
+    margin-top: .3em; 
 } 
 
 .icon-text{
-    display: inline-block;
-    color: white; 
+    color: white;
+    display: inline-block; 
     margin-left: .6em;
 }  
 .icon-text-1{
-    display: flex;
-    color: white; 
+    color: white;
+    display: flex; 
     margin-left: 4em; 
     margin-top: .1em;
 }
 /*Include*/
-.nav-included-title {
-    font-weight: 700; 
+.nav-included-title { 
     color: white; 
-    margin-top: 2em; 
-    margin-left: 1.5em;    
+    font-weight: 700;
+    margin-left: 1.5em;
+    margin-top: 2em;     
 } 
 .panel1{
     border-right: 1px solid white; 
 
 } 
-
-.panel2{  
-
-}
 .fa-globe{
     color: white; 
     font-size: 2.8em; 
-    margin-top: .3em; 
     margin-bottom: .3em; 
-    margin-left: 1em; 
+    margin-left: 1em;
+    margin-top: .3em;  
 }
 
 .fa-lock{
     color: white; 
     font-size: 2.9em; 
-    margin-top: .3em; 
     margin-bottom: .3em;  
     margin-left: 1em;
+    margin-top: .3em; 
 } 
 
 .icon-img{
-    margin-top: 2em; 
     margin-bottom: .8em;  
-    margin-left: 3.5em; 
+    margin-left: 3.5em;
+    margin-top: 2em;  
 } 
 
 .icon-img-snorkel{
-    margin-top: 2em; 
     margin-bottom: .8em;  
-    margin-left: 2.5em; 
+    margin-left: 2.5em;
+    margin-top: 2em;  
 } 
 
 .icon-img-compres{
-   margin-top: -2em; 
     margin-bottom: .8em;  
-    margin-left: 2.5em;  
+    margin-left: 2.5em; 
+    margin-top: -2em;  
 }
 
 .fa-cutlery{
     color: white; 
     font-size: 2.8em; 
-    margin-top: .3em; 
     margin-bottom: .3em; 
     margin-left: 1em;
+    margin-top: .3em; 
 } 
 
 .fa-money{
     color: white; 
     font-size: 2.8em; 
-    margin-top: .3em; 
     margin-bottom: .3em; 
     margin-left: 1em; 
+    margin-top: .3em; 
 } 
 
 .fa-camera{
     color: white; 
     font-size: 2.8em; 
-    margin-top: .3em; 
     margin-bottom: .3em; 
-    margin-left: 1em;  
+    margin-left: 1em;
+    margin-top: .3em;   
 }  
 
 .fa-sticky-note-o{
     color: white; 
     font-size: 2.8em; 
-    margin-top: .3em; 
     margin-bottom: .3em; 
     margin-left: 1em;
+    margin-top: .3em; 
 }
 /*First Time Divers*/
 .nav-first-title{
     color:white; 
+    font-size: 2em;
     font-weight: 700; 
     margin-top: 2em; 
-    font-size: 2em;
 } 
 .nav-first-title2{ 
-    font-family: 'Roboto Cn';
-    color: #BFBA13; 
+    color: #BFBA13;
+    font-family: 'Roboto Cn'; 
     font-weight: 700;
 } 
 
@@ -439,18 +443,18 @@ section[name="scuba-act-body"]{
 } 
 .fa-long-arrow-down{
     color: white; 
-    font-size: 2.8em; 
-    margin-top: .3em; 
+    font-size: 2.8em;
     margin-bottom: .3em; 
     margin-left: 1em;
+    margin-top: .3em; 
 }
 
 /*Experienced*/
 .nav-experienced-title{
     color:white; 
+    font-size: 2em;
     font-weight: 700; 
-    margin-top: 2em; 
-    font-size: 2em;   
+    margin-top: 2em;    
 } 
 .nav-experienced-title2{
     color: #BFBA13; 
@@ -462,9 +466,9 @@ section[name="scuba-act-body"]{
 /*Non Diver*/
 .nav-non-title{
     color:white; 
+    font-size: 2em;
     font-weight: 700; 
     margin-top: 2em; 
-    font-size: 2em;
 } 
 
 .nav-non-title2{
@@ -477,33 +481,34 @@ section[name="scuba-act-body"]{
 }  
 
 /*BOOK NOW*/ 
-.scuba-act-button{ 
-    position: absolute; 
-    top: 8.7em; 
-    right: 0em;
-    width: 225px;
-    height: 80px;
+.scuba-act-button{   
+    background: green;
     background: rgba(101,165,9, .70);
     border: none;
+    height: 80px;
+    position: absolute; 
+    right: 0;
+    top: 8.7em; 
+    width: 225px;
 } 
 .scuba-act-button span{ 
-    text-align: right;
     color: white;
-    font-weight: 500; 
-    font-size: 2em; 
-    padding-right: 1em; 
     display: inline-block;
+    font-size: 2em; 
+    font-weight: 500; 
+    padding-right: 1em; 
     position: relative;
+    text-align: right;
     transition: 0.5s;
 }  
 
 .scuba-act-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    opacity: 0;
+    position: absolute; 
+    right: -20px;
+    top: 0;
+    transition: 0.5s;
 }
 
 .scuba-act-button:hover span {
@@ -518,152 +523,152 @@ section[name="scuba-act-body"]{
 
 /*BEGIN MANGROVE ACTIVITIE*/ 
     /*Begin MAngrove Activitie INTRO*/
-section[name="mangrove-act-intro"]{ 
+section[name="mangrove-act-intro"]{
+    height: 100%;
     position: relative;
-    height: 100%;
 } 
-.mangroveCarousel-1{
-    background-image: url('../assets/images/tours/MPE_MT_Top_01.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+.mangroveCarousel-1{ 
+    align-items: center;
+    background: url('../assets/images/tours/MPE_MT_Top_01.jpg'); 
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
+    height: 100%;
     justify-content: center;
-    align-items: center;
 }
 .mangroveCarousel-2{
-    background-image: url('../assets/images/tours/MPE_MT_Top_02.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center;
+    background: url('../assets/images/tours/MPE_MT_Top_02.jpg'); 
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
+    height: 100%;
     justify-content: center;
-    align-items: center;
 }
 .mangroveCarousel-3{
-    background-image: url('../assets/images/tours/MPE_MT_Top_03.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center;
+    background: url('../assets/images/tours/MPE_MT_Top_03.jpg'); 
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
+    height: 100%;
     justify-content: center;
-    align-items: center;
 }
 .title3-act{ 
     color: #ED2A50; 
-    font-weight: 700; 
     font-size: 1em;
+    font-weight: 700; 
 }
 
 section[name="mangrove-act-intro"] .underline {
-    text-decoration: underline; 
-    text-decoration-color: #ED2A50; 
-    font-weight: 700; 
     font-size: 1em;
+    font-weight: 700; 
+    text-decoration: underline #ED2A50;
 }  
 
 section[name="mangrove-act-body"]{ 
-    background-image: url('../assets/images/tours/MPE_MT_Content.jpg');
+    align-items: center;
     background-attachment: fixed;
-    background-repeat: no-repeat; 
+    background-image: url('../assets/images/tours/MPE_MT_Content.jpg'); 
     background-position: top; 
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100%; 
+    height: 100%;
+    justify-content: center;  
     position: relative;
 }  
 .cuadro-mangrove 
 {
-    padding-top: 0px;
-    height: 100%;
-    width: 111%;
+    background: green;
+    background: rgba(3,130,61, .70); 
     float: left;
-    background-color: rgba(3,130,61, .70);
+    height: 100%;
+    padding-top: 0;
+    width: 111%;
 }  
 
 
 .act-title-mangrove{
     color: #ED2A50; 
-    font-weight: 700; 
     font-size: 1em;
+    font-weight: 700;
 } 
 
 .nav-mangrove-title{
     color:#ED2A50; 
+    font-size: 2em;
     font-weight: 700; 
-    margin-top: 2em; 
-    font-size: 2em;    
+    margin-top: 2em;     
 }
 
 .icon-underText{
-    font-weight: 100;
-    font-size: .8em; 
     color: white; 
+    font-size: .8em; 
+    font-weight: 100;
     width: 70%
 } 
 .nav-aux{ 
-    margin-top: 0px; 
-    padding-top: 0px;
+    margin-top: 0; 
     padding-left: 6em;
+    padding-top: 0;
 } 
 .aux {
-    margin-bottom: 0px; 
-    padding-bottom: 0px;
+    margin-bottom: 0; 
+    padding-bottom: 0;
 } 
 .icon-text-speed{
+    color: white;
     display: inline-block;
-    color: white; 
+    margin-bottom: 0;
     margin-left: .6em; 
-    margin-bottom: 0px;
 } 
 
 .mangrove-act-button{ 
-    position: absolute; 
-    top: 8.7em; 
-    right: 0em;
-    width: 225px;
-    height: 80px;
     background: #ED2A50;
-    border: none;
+    border: none; 
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 8.7em;
+    width: 225px;
 } 
 .mangrove-act-button span{ 
-    text-align: right;
     color: white;
-    font-weight: 500; 
-    font-size: 2em; 
-    padding-right: 1em; 
     display: inline-block;
+    font-size: 2em;
+    font-weight: 500;  
+    padding-right: 1em; 
     position: relative;
+    text-align: right;
     transition: 0.5s;
 }  
 
 .mangrove-act-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb'; 
+    opacity: 0;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    transition: 0.5s;
 }
 
 .mangrove-act-button:hover span {
@@ -679,159 +684,157 @@ section[name="mangrove-act-body"]{
 
 /*BEGIN JUNGLE ACTIVITIE*/
 section[name="jungle-act-intro"]{ 
-    position: relative;
     height: 100%;
+    position: relative;
 }  
 
 .jungleCarousel-1{
-    background-image: url('../assets/images/tours/JungleTour_Top_01.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center;
+    background: url('../assets/images/tours/JungleTour_Top_01.jpg'); 
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
+    height: 100%;
     justify-content: center;
-    align-items: center;
 } 
 .jungleCarousel-2{
-    background-image: url('../assets/images/tours/JungleTour_Top_02.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center;
+    background: url('../assets/images/tours/JungleTour_Top_02.jpg'); 
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
+    height: 100%;
     justify-content: center;
-    align-items: center;
 } 
 .jungleCarousel-3{
-    background-image: url('../assets/images/tours/JungleTour_Top_03.jpg'); 
-    height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center;
+    background: url('../assets/images/tours/JungleTour_Top_03.jpg'); 
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
+    height: 100%;
     justify-content: center;
-    align-items: center;
 }
  
 .title4-act{ 
     color: #F96900; 
-    font-weight: 700; 
     font-size: 1em;
+    font-weight: 700; 
 }
 
 section[name="jungle-act-intro"] .underline {
-    text-decoration: underline; 
-    text-decoration-color: #F96900; 
-    font-weight: 700; 
     font-size: 1em;
+    font-weight: 700; 
+    text-decoration: underline #F96900;
 }  
 
 section[name="jungle-act-body"]{ 
-    background-image: url('../assets/images/tours/JungleTour_Content.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+    align-items: center;
+    background: url('../assets/images/tours/JungleTour_Content.jpg');
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100%; 
+    height: 100%;
+    justify-content: center;  
     position: relative;
 }  
-.cuadro-jungle 
-{
-    padding-top: px;
-    height: 100%;
-    width: 111%;
+.cuadro-jungle {   
+    background: green;
+    background: rgba(101,165,9, .70);
     float: left;
-    background-color: rgba(101,165,9, .70);
+    height: 100%; 
+    padding-top: 0;
+    width: 111%;
 }  
 
 
 .act-title-jungle{
     color: #F96900; 
-    font-weight: 700; 
     font-size: 1em;
+    font-weight: 700; 
 } 
 
 .nav-jungle-title{
     color:#F96900; 
-    font-weight: 700; 
-    margin-top: 2em; 
-    font-size: 2em;    
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 2em;     
 }
-.nav-jungle-titleGreen 
-{
-    font-family: 'Roboto Cn';
-    padding-left: 1.8em;
+.nav-jungle-titleGreen { 
     color: #BFBA13; 
+    font-family: 'Roboto Cn';
     font-weight: 700; 
+    padding-left: 1.8em;
 } 
 .icon-underText{
-    font-weight: 100;
-    font-size: .8em; 
-    color: white; 
+    color: white;
+    font-size: .8em;
+    font-weight: 100;  
     width: 70%
 } 
 .nav-aux{ 
-    margin-top: 0px; 
-    padding-top: 0px;
+    margin-top: 0; 
     padding-left: 6em;
+    padding-top: 0;
 } 
 .aux {
-    margin-bottom: 0px; 
-    padding-bottom: 0px;
+    margin-bottom: 0; 
+    padding-bottom: 0;
 } 
 .icon-text-speed{
-    display: inline-block;
     color: white; 
+    display: inline-block;
+    margin-bottom: 0;
     margin-left: .6em; 
-    margin-bottom: 0px;
 } 
 
-.jungle-act-button{ 
-    position: absolute; 
-    top: 8.7em; 
-    right: 0em;
-    width: 225px;
-    height: 80px;
+.jungle-act-button{  
     background: #f96900;
     border: none;
+    height: 80px;
+    position: absolute; 
+    right: 0;
+    top: 8.7em; 
+    width: 225px;
 } 
 .jungle-act-button span{ 
-    text-align: right;
     color: white;
-    font-weight: 500; 
-    font-size: 2em; 
-    padding-right: 1em; 
     display: inline-block;
+    font-size: 2em;
+    font-weight: 500;  
+    padding-right: 1em; 
     position: relative;
+    text-align: right;
     transition: 0.5s;
 }  
 
 .jungle-act-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    opacity: 0;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    transition: 0.5s;
 }
 
 .jungle-act-button:hover span {
@@ -845,142 +848,139 @@ section[name="jungle-act-body"]{
 /**/
 
 /*BEGIN DISCOUNTS*/  
-section[name="discount-intro"]{ 
-    position: relative;
-    height: 100%;
-    background-image: url('../assets/images/discount/discounts.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+section[name="discount-intro"]{
+    align-items: center;
+    background: url('../assets/images/discount/discounts.jpg');
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    justify-content: center; 
+    position: relative;
 } 
 
-.logo-dis{
-    position: absolute; 
-    bottom: 7.5em; 
-    right: .3em;
+.logo-dis{ 
+    bottom: 7.5em;
+    height: auto;
+    position: absolute;
+    right: .3em; 
     width:  460px; 
-    height: auto;  
 }  
 
 .title-dis{
-    position: absolute; 
     bottom: .2em; 
-    right: .3em; 
     color:white; 
-    font-size: 6em; 
+    font-size: 6em;
+    position: absolute; 
+    right: .3em;  
     text-shadow: 2px 2px 2px rgba(0,0,0,.2);
 } 
 
 .title2-dis{
     color: #65A509; 
-    font-weight: 700; 
-    font-size: 1em;   
+    font-size: 1em;
+    font-weight: 700;    
 }
-section[name="discount-intro"] .underline{ 
-    text-decoration: underline; 
-    text-decoration-color: #65A509; 
-    font-weight: 700; 
+section[name="discount-intro"] .underline{
     font-size: 1em; 
+    font-weight: 700; 
+    text-decoration: underline #65A509;
     
 } 
-section[name="discount-body"] 
-{
-    position: relative;
-    height: 100%;
-    background-image: url('../assets/images/discount/discounts-content.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-position: top; 
+section[name="discount-body"] {
+    align-items: center;
+    background: url('../assets/images/discount/discounts-content.jpg');
+    background-attachment: fixed; 
+    background-position: top;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
     display: flex;
+    height: 100%;
     justify-content: center;
-    align-items: center; 
+    position: relative; 
 } 
 .discount-b{
-    width: 100%;
     height: 100%; 
-    padding-left: 0px; 
-    padding-right: 0px;
+    padding-left: 0; 
+    padding-right: 0;
+    width: 100%;
 } 
-.promotion-stamp{
-    position: absolute; 
-    top: 1em; 
-    left: 15vw; 
-    width: 30em; 
+.promotion-stamp{ 
     height: auto;
+    left: 15vw;  
+    position: absolute; 
+    top: 1em;
+    width: 30em; 
 }
-.discount-info{
-    width: 20%; 
-    height: 100%; 
-    float: right; 
-} 
-.cuadro-discount{ 
-    padding-top: 0px;
-    height: 100%;
-    width: 100%;
-    background: rgba(0,123,163,.60); 
-}  
 
-.promotion-title{  
-    margin-top: 0px;
-    font-size: 4em; 
+.discount-info{
+    float: right;
+    height: 100%; 
+    width: 20%;  
+} 
+.cuadro-discount{
+    background: blue;
+    background: rgba(0,123,163,.60);
+    height: 100%;
+    padding-top: 0;
+    width: 100%; 
+}  
+.promotion-title{ 
     color: white; 
-    padding-top: 1em; 
+    font-size: 4em; 
+    font-weight: 700;
+    margin-top: 0;
     padding-left: .5em; 
-    font-weight: 700; 
+    padding-top: 1em;  
     text-shadow: 2px 2px 2px rgba(0,0,0,.2);
 } 
-
 .promotion-title span{
-    font-weight: 700; 
+    color:#f96900;
     font-size: 1em; 
-    color:#f96900; 
+    font-weight: 700;  
 } 
-
-.promotion-info{
-    padding-left: 1em; 
-    padding-top: 1em; 
+.promotion-info{ 
     color:white; 
     font-weight: 700;
+    padding-left: 1em; 
+    padding-top: 1em;
 }
-
 .discount-button{ 
-    position: absolute; 
-    bottom: 3vw; 
-    right: 0em;
-    width: 20em;
-    height: 5em;
     background: #f96900;
     border: none;
+    bottom: 3vw; 
+    height: 5em;
+    position: absolute;
+    right: 0;
+    width: 20em;
+    
 } 
 .discount-button span{ 
-    text-align: right;
     color: white;
-    font-weight: 500; 
-    font-size: 2em; 
-    padding-right: 1em; 
     display: inline-block;
-    position: relative;
+    font-size: 2em; 
+    font-weight: 500;  
+    padding-right: 1em; 
+    position: relative; 
+    text-align: right;
     transition: 0.5s;
 }  
 
 .discount-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    opacity: 0;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    transition: 0.5s;
 }
 
 .discount-button:hover span {

@@ -7,19 +7,19 @@
                     <div>
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs nav-justified" role="tablist">
-                            <li role="presentation" class="active" disabled>
+                            <li role="presentation" class="active" >
                                 <a data-target="#schedule" aria-controls="home" role="tab" data-toggle="tab">1 SCHEDULE</a>
                             </li>
-                            <li role="presentation">
+                            <li >
                                 <a data-target="#info" aria-controls="profile" role="tab" data-toggle="tab">2 INFO</a>
                             </li>
-                            <li role="presentation">
+                            <li >
                                 <a data-target="#terms" aria-controls="messages" role="tab" data-toggle="tab">3 TERMS</a>
                             </li>
-                            <li role="presentation">
+                            <li >
                                 <a data-target="#extras" aria-controls="settings" role="tab" data-toggle="tab">4 EXTRAS</a>
                             </li>
-                            <li role="presentation">
+                            <li >
                                 <a data-target="#checkout" aria-controls="settings" role="tab" data-toggle="tab">5 CHECKOUT</a>
                             </li>
                         </ul>
@@ -32,21 +32,21 @@
                                         <option value="" disabled>Activity</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group"> 
                                     <p class="bookingSectionSubtitle">DATE</p>
                                     <div class="input-group date" data-provide="datepickerBooking">
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="text" class="form-control pull-right" id="datepickerBooking" placeholder="Fecha" ng-model="booking.date">
+                                        <input type="text" class="form-control pull-right"  id="datepickerBooking" placeholder="DATE" ng-model="booking.date">
                                     </div>
-                                </div>
+                                </div> 
                                 <div class="form-group" ng-if="availableTime">
                                     <p class="bookingSectionSubtitle">TIME</p>
                                     <label class="radio-inline">
                                         <input type="radio" ng-model="booking.time" value="1"> {{booking.activity.hora1}}
                                     </label>
-                                    <label class="radio-inline">
+                                    <label ng-hide="booking.activity.nombre == 'Scuba Dive'" class="radio-inline">
                                         <input type="radio" ng-model="booking.time" value="2"> {{booking.activity.hora2}}
                                     </label>
                                     <label class="radio-inline">
@@ -54,13 +54,14 @@
                                     </label>
 
                                 </div>
-                                <button type="button" class="btn bookingButtonContinue" ng-click="checkAvailability()" ng-disabled="bookingTabs.schedule">CONTINUE</button>
+                                <button type="button" id="continue" class="btn bookingButtonContinue " ng-click="checkAvailability()" ng-disabled="bookingTabs.schedule">CONTINUE</button> 
                             </div>
 
                             <div role="tabpanel" class="tab-pane" id="info">
                                 <div ng-if="bookingData.precios && !bookingTabs.schedule">
                                     <p class="bookingSectionSubtitle">TICKETS</p>
-                                    <div class="row">
+                                    
+                                    <div id="adultTickets" class="row">
                                         <div class="col-xs-12 col-md-4">
                                             <div class="form-group">
                                                 <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.adult = booking.adult - 1">-</button>
@@ -83,9 +84,34 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div> 
+                                    
+                                    <div id="firstTickets" class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.adult = booking.adult - 1">-</button>
+                                                <span class="bookintTicketsNumber" ng-model="booking.adult" ng-bind="booking.adult"></span>
+                                                <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.adult = booking.adult + 1">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-8">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">
+                                                            <b> First time divers </b>
+                                                        </label>
+                                                        <p>{{bookingData.precios.precioAdulto | currency}} EACH</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div class="row">
+                                    <div id="childTickets" class="row">
                                         <div class="col-xs-12 col-md-4">
                                             <div class="form-group">
                                                 <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.child = booking.child - 1">-</button>
@@ -108,8 +134,34 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div> 
+                                    
+                                    <div id="reefTickets" class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.child = booking.child - 1">-</button>
+                                                <span class="bookintTicketsNumber" ng-model="booking.child" ng-bind="booking.child"></span>
+                                                <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.child = booking.child + 1">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-8">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <div class="form-gro">
+                                                        <label for="">
+                                                            <b> Reef Diving </b>
+                                                        </label>
+                                                        <p> {{bookingData.precios.precioNino | currency}} EACH</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row">
+                                    
+                                    <div id="infantTickets" class="row">
                                         <div class="col-xs-12 col-md-4">
                                             <div class="form-group">
                                                 <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.infant = booking.infant - 1">-</button>
@@ -122,13 +174,63 @@
                                                 <div class="col-xs-12 col-md-6">
                                                     <div class="form-group">
                                                         <label for="">
-                                                            <b> Infant </b>
+                                                            <b > Infant </b>
                                                         </label>
                                                         <p> {{bookingData.precios.precioInfante | currency}} EACH </p>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-md-6">
-                                                    <p>Up to 5 years</p>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    
+                                    <div id="WreckTickets" class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.infant = booking.infant - 1">-</button>
+                                                <span class="bookintTicketsNumber" ng-model="booking.infant" ng-bind="booking.infant"></span>
+                                                <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.infant = booking.infant + 1">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-8">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">
+                                                            <b> Wreck and Reef Diving </b>
+                                                        </label>
+                                                        <p> {{bookingData.precios.precioInfante | currency}} EACH </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="nonDiver"class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.nonDiver = booking.nonDiver - 1">-</button>
+                                                <span class="bookintTicketsNumber" ng-model="booking.nonDiver" ng-bind="booking.nonDiver"></span>
+                                                <button class="btn btn-primary btn-sm btn-circle" ng-click="booking.nonDiver = booking.nonDiver + 1">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-8">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="">
+                                                            <b> Non Diver </b>
+                                                        </label>
+                                                        <p>{{bookingData.precios.precioNonDivers | currency}} EACH</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,9 +252,9 @@
                                         <div class="col-xs-12 col-md-6">
                                             <input type="email" class="form-control bookingInfoInput" ng-model="booking.Info.correo" placeholder="Email">
                                         </div>
-                                    </div>
-
-                                    <button type="button" class="btn bookingButtonContinue" ng-click="checkTickets()" ng-disabled="bookingTabs.info">CONTINUE</button>
+                                    </div> 
+                                    <br>
+                                    <button  class="btn bookingButtonContinue" ng-click="checkTickets()" ng-disabled="bookingTabs.info">CONTINUE</button>  
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="terms">
@@ -167,9 +269,10 @@
                                     <div class="checkbox">
                                         <label class="bookingTerms">
                                             <input type="checkbox" value="" ng-model="booking.aceptTerms">I agree to Marina Punta del Este
-                                            <a href="">Terms of Service</a>
+                                            <a data-toggle="modal" data-target="#myModal">Terms of Service</a>
                                         </label>
-                                    </div>
+                                    </div> 
+                                      
                                     <button type="button" class="btn bookingButtonContinue" ng-click="getExtras()" ng-disabled="bookingTabs.terms">CONTINUE</button>
                                 </div>
                             </div>
@@ -291,7 +394,9 @@
                                             <div>
                                                 <div id="paypal-button"></div>
                                             </div>
-                                        </div>
+                                        </div> 
+                                        <br>
+                                        <button type="button" class="btn bookingButtonContinue" ng-click="Registrar()">Registrar</button>
                                     </div>
 
                                 </div>
@@ -313,9 +418,13 @@
                         <h4 ng-bind="booking.activity.nombre"></h4>
                         <p ng-bind="booking.date"></p>
                         <p ng-bind="booking.hour"></p>
-                        <p ng-if="booking.adult > 0"> {{booking.adult}} x Adult </p>
-                        <p ng-if="booking.child > 0"> {{booking.child}} x Child </p>
-                        <p ng-if="booking.infant > 0"> {{booking.infant}} x Infant </p>
+                        <p ng-if="booking.adult > 0" ng-hide="booking.activity.nombre == 'Scuba Dive'"> {{booking.adult}} x Adult </p>
+                        <p ng-if="booking.child > 0" ng-hide="booking.activity.nombre == 'Scuba Dive'"> {{booking.child}} x Child </p>
+                        <p ng-if="booking.infant > 0" ng-hide="booking.activity.nombre == 'Scuba Dive'"> {{booking.infant}} x Infant </p>  
+                        <p ng-if="booking.adult > 0" ng-show="booking.activity.nombre == 'Scuba Dive'"> {{booking.adult}} x First time divers </p>
+                        <p ng-if="booking.child > 0" ng-show="booking.activity.nombre == 'Scuba Dive'"> {{booking.child}} x Reef Diving </p>
+                        <p ng-if="booking.infant > 0" ng-show="booking.activity.nombre == 'Scuba Dive'"> {{booking.infant}} x Wreck and Reef Diving </p> 
+                        <p ng-if="booking.nonDiver > 0" ng-show="booking.activity.nombre == 'Scuba Dive'"> {{booking.nonDiver}} x NonDiver </p> 
                         <p ng-if="booking.Extras.wetsuit > 0"> {{booking.Extras.wetsuit}} x Wetsuit </p>
                         <p ng-if="booking.Extras.mask > 0"> {{booking.Extras.mask}} x Mask </p>
                         <hr>
@@ -325,7 +434,103 @@
                     </div>
                 </div>
             </div>
+        </div>  
+    </section> 
+</div> 
+            <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-        </div>
-    </section>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Terms & Conditions</h4>
+      </div>
+                      <div class="modal-body">
+                  <br>
+                  Booking, payments and cancellations 
+                  <br> 
+                  <br>
+        ● Prices include tax and are shown in U.S. dollars. 
+                  <br>
+        ● For payment in Mexican Pesos the charges will be calculated at our current 
+                  <br>
+            exchange rates and payment in full shall be due at the time of booking. 
+                  <br>
+        ● Once the payment has been processed, a confirmation number will be given to
+        guarantee your reservation at the chosen date and time. 
+                  <br>
+        ● Marina Punta del Este accepts bookings either online, verbally, by email or written
+        letter. 
+                  <br>
+        ● Cancellations made 24 hours prior to the scheduled reservation will be 100%
+        refundable.
+                  <br>
+        ● Cancellations made with less than 24 hours prior to the scheduled reservation will
+        NOT BE REFUNDABLE nor compensated.
+                  <br>
+        ● Admission will be denied to people under the influence of drugs or alcohol and NO
+        REFUNDS or compensation will be payable in such circumstances.
+                  <br>
+        ● To ensure that you and your party’s participation commences at the time booked, it
+        is the responsibility of each participant to ensure that they arrive in sufficient time, at
+        least 30 minutes before the start time.
+                  <br>
+        ● Late arrivals may not be permitted to undertake the activities and NO REFUNDS or
+        compensation will be payable in such circumstances.
+                  <br>
+        ● Due mostly to weather conditions Marina Punta del Este shall be entitled to cancel
+        your booking at any time. In the event that we must cancel your booking we will use
+        all reasonable endeavours to notify you as soon as possible. You shall be entitled to
+        a full refund in the event of cancellation under this clause but no other
+        compensation shall be payable.
+                  <br>
+        ● Please note that you will be required to present a valid photo I.D upon check-in.<br>
+        ● A $10.00 usd national park and dock fee will be charged upon check-in.<br>
+        ● The capacity of the speedboats is from 2 to 4 pax per watercraft. For single rides an
+        additional $49.00 usd fee will apply.<br>
+        ● Kids under 4 years old are free of charge and must be supervised by their parents or
+        guardian.<br>
+
+
+        ● Kids rate will apply for children ages 5 to 12 years old and must be accompanied by
+        an adult.<br>
+        ● For scuba diving tours only adult rates will apply.<br>
+        <br>
+        Safety and liabilities
+        ● A participating adult must accompany under 18 year old participants.<br>
+        ● The minimum age requirement to drive a speedboat is 17 years old, parent or
+        guardian’s signature is mandatory and driver can not be accompanied by other
+        children.<br>
+        ● The minimum age limit to undertake scuba diving tours is 11 years old and adult
+        rate will apply.<br>
+        ● The maximum age limit to undertake the mangrove tour and/or jungle tour is 65
+        years old.<br>
+        ● The maximum age limit to undertake scuba diving tours is 62 years old.<br>
+        ● The maximum weight capacity per speedboat is 500 lb / 250 kg.<br>
+        ● Each participant will be required to sign the Risk Acknowledgement and Disclaimer
+        before being allowed to undertake the activities.<br>
+        ● Participants will be required to certify that they do not suffer from any medical
+        condition which would make it more likely that they would be involved in any
+        incident which could result in injury to themselves or others.<br>
+        ● Due to the physical nature of the activities, Marina Punta del Este recommends that
+        pregnant women should not take part. Pregnant women who still wish to undertake
+        the activities will be required to sign a disclaimer confirming that they are aware that
+        there are risks to them and to their unborn child and that participation in the
+        activities is at their own risk.<br>
+        ● Marina Punta del Este reserves the right to refuse admittance to the activities or to
+        remove a participant from the activities should it deem it necessary to do so. This
+        includes a participant who does not comply with the safety rules and advice or who
+        is deemed to be under the influence of alcohol or drugs.<br>
+        ● Marina Punta del Este will not be held responsible for the loss, or damage, of or to
+        any property of the participants.<br>
+
+                </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>

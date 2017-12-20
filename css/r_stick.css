@@ -26,44 +26,6 @@
         width: 50%;
     } 
 } 
-@media screen and (max-width: 425px) and (min-width:0px) {  
-    /*SCUBA TOUR*/
-    .scubaCarousel-1{
-        background-image: url('../assets/images/tours/Movil_ScubaDive_Top_01.jpg'); 
-    } 
-    .scubaCarousel-2{
-        background-image: url('../assets/images/tours/Movil_ScubaDive_Top_02.jpg'); 
-    } 
-    .scubaCarousel-3{
-        background-image: url('../assets/images/tours/Movil_ScubaDive_Top_03.jpg'); 
-    }
-    .scubaCarousel-4{
-        background-image: url('../assets/images/tours/Movil_ScubaDive_Top_04.jpg'); 
-    } 
-    .scubaCarousel-5{
-        background-image: url('../assets/images/tours/Movil_ScubaDive_Top_05.jpg'); 
-    } 
-    /*MANGROVE TOUR*/ 
-    .mangroveCarousel-1{
-        background-image: url('../assets/images/tours/Movil_MPE_MT_Top_01.jpg'); 
-    } 
-    .mangroveCarousel-2{
-        background-image: url('../assets/images/tours/Movil_MPE_MT_Top_02.jpg'); 
-    } 
-    .mangroveCarousel-3{
-        background-image: url('../assets/images/tours/Movil_MPE_MT_Top_03.jpg'); 
-    } 
-    /*JUNGLE TOUR*/ 
-    .jungleCarousel-1{
-        background-image: url('../assets/images/tours/Movil_JungleTour_Top_01.jpg'); 
-    } 
-    .jungleCarousel-2{
-        background-image: url('../assets/images/tours/Movil_JungleTour_Top_02.jpg'); 
-    }
-    .jungleCarousel-3{
-        background-image: url('../assets/images/tours/Movil_JungleTour_Top_03.jpg'); 
-    } 
-}
 @media screen and (max-width: 425px) {  
     .title-act{
         font-size: 3em;

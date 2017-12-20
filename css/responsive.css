@@ -24,21 +24,22 @@
 }
 /*movil*/ 
 @media screen and (max-width: 450px){  
-    /*HOME*/
-    .prueba1{
-        background-image: url('../assets/images/Movil_Img_Seccion1_01.jpg');
-    } 
-    .prueba2{
-        background-image: url('../assets/images/Movil_Img_Seccion1_02.jpg');
-    } 
-    .prueba3{
-        background-image: url('../assets/images/Movil_Img_Seccion1_03.jpg');
-    } 
-    .prueba4{
-        background-image: url('../assets/images/Movil_Img_Seccion1_04.jpg');
-    } 
-    .prueba5{
-        background-image: url('../assets/images/Movil_Img_Seccion1_05.jpg');
+    /*HOME*/  
+    section#bookingSection{
+        min-height: 300%;
+    }
+    .newSlider{
+        height: auto !important;
+    }
+    .noMore{
+        display: none;
+    }  
+    .yesMore{
+        display: block;
+    }
+    .fullHeightSection1{
+        height: 0; 
+        min-height: 0;
     }
     section#descriptionSection div.description div#descriptionContent{
         width: 100%;
